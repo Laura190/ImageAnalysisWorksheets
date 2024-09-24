@@ -7,7 +7,7 @@ Segmentation is the separation of an image into areas of interest and areas that
 | <img src="cells.png" alt="cells" width="200"/> | <img src="binary_cells.png" alt="binary cells" width="200"/> |
 | <img src="building.png" alt="building" width="200"/> | <img src="binary_building.png" alt="binary building" width="200"/> |
 
-A binary mask can be used to count, measure or viualise objects.
+A binary mask can be used to count, measure or visualise objects.
 
 ## :performing_arts: Thresholding: The Art of Separation
 
@@ -24,11 +24,11 @@ Thresholding separates the pixels in an image into two (or more) classes based o
 | 5      | Create a Mask | Click "Apply" |
 
 ### :thinking: **Investigate**
-- What do the two sliders do?​
+- What do the two sliders do?
 - What difference does checking the Dark background box make to the mask?​
 - Look in the macro recorder output, which lines set the threshold value and apply the mask?​
 
-## :computer: Automatic Thesholding: Let the Computer Do It
+## :computer: Automatic Thresholding: Let the Computer Do It
 
 A manual threshold can be inconsistent and subjective. To overcome these issues, automatic thresholding methods can be used.
 
@@ -40,7 +40,7 @@ A manual threshold can be inconsistent and subjective. To overcome these issues,
 | 2      | Open the Auto Threshold Tool | Navigate to `Image > Adjust > Auto Threshold`. <br> <img src="Auto Threshold.png" alt="Threshold" width="400"/> |
 | 3      | Use the Default Settings | Click "OK" |
 
-A montage showing the results from the different automatic thresholding methods should appear. The name of the method is written under each thesholded copy of blobs, you may need to zoom in using the magnifying tool to read them. Ask for help if you don't get an image montage or you can't see the method names.
+A montage showing the results from the different automatic thresholding methods should appear. The name of the method is written under each binary copy of blobs, you may need to zoom in using the magnifying tool to read them. Ask for help if you don't get an image montage or you can't see the method names.
 
 ### :thinking: **Investigate**
 - Which automatic thresholding method gives the best results for thresholding the blobs image?
@@ -70,7 +70,7 @@ Connected component analysis (CCA) is used to identify contiguous objects in a m
 | 2     | Start the Analyze Particles tool | Navigate to `Analyze > Analyze Paricles`. |
 | 3     | Select the required settings and run the tool | Match the settings shown in the image <br> <img src="analyze_particles.png" alt="analyze particles" width="250"/> <br> then click "OK" |
 
-You should get results table containg a count (64) and some other measurements as well as an image where each blob is a different shade of grey. If you want to display the results more clearly change the Look Up Table (LUT) to glasbey_on_dark
+You should get results table containing a count (64) and some other measurements as well as an image where each blob is a different shade of grey. If you want to display the results more clearly change the Look Up Table (LUT) to glasbey_on_dark
 
 
 
