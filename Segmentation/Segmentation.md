@@ -18,6 +18,21 @@ Before starting the worksheet, download the associated Data folder from Moodle a
 | 1      | Open Fiji | Find the executable in the downloaded Fiji folder and double-click to launch it. |
 | 2      | Open the Macro Recorder | Navigate to `Plugins > Macro > Record`. |
 
+# Learning Objectives:
+
+By following this worksheet, you will learn about the following concepts:
+- Local maxima
+- Filters
+- Thresholds
+- Binary operations
+
+You will also learn how to use tools in Fiji to:
+- Count objects
+- Segment an image
+- Measure objects
+- Save a record what you have done interactively
+- Create a macro to run a sequence of steps automatically
+
 # Counting Objects
 
 A common task in image analysis is counting how many objects are in an image. In fluorescence microscopy images objects are identified as having a different intensity from the background. We can use a tool called `Find Maxima` to identify location of objects and count how many there are. The `Find Maxima` tool identifies local maxima based on a user defined **prominence** value. The prominence value is a measure of how distinct a peak is from it's surroundings. The higher the prominence value, the more distinct a peak is from it's surroundings. The `Find Maxima` tool can also identify local minima by selecting the **Light background** option.
@@ -229,3 +244,5 @@ Open `live_nuclei.tif`. This is a 2D widefield fluorescence image of live nuclei
 ## :wrench: Apply Your skills
 
 Using the skills you've learnt during this worksheet, can you count the rings in the `Tree Rings` sample image?
+
+# Please complete the learning objective survey on Moodle
