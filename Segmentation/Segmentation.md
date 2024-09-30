@@ -18,7 +18,7 @@ Before starting the worksheet, download the associated Data folder from Moodle a
 | 1      | Open Fiji | Find the executable in the downloaded Fiji folder and double-click to launch it. |
 | 2      | Open the Macro Recorder | Navigate to `Plugins > Macro > Record`. |
 
-# Learning Objectives:
+# Learning Objectives
 
 By following this worksheet, you will learn about the following concepts:
 - Local maxima
