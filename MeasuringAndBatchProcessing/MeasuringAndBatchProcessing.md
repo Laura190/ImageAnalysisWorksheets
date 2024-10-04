@@ -21,7 +21,7 @@ Before starting the worksheet, download the associated Data folder from Moodle a
 # Learning Objectives
 ...
 
-# :triangular_ruler: Making Selections
+# :triangular_ruler: Making Measurements
 
 In the previous worksheet, we used `Analyze Particles` to identify and measure objects. There are more ways to make measurements in Fiji.
 
@@ -77,3 +77,68 @@ The **ROI (region of interest) manager** is used to store and measure selections
 - What happens if you click `Measure` in the ROI manager rather than using multi-measure?
 - What happens if you select one of the ROIs in the ROI manager (by clicking on the name of the ROI) and then click measure?
 - What option from `Analyze Particles` can you use to add the regions detected using connected component analysis to the ROI manager?
+
+# Batch Processing
+
+Batch processing allows the same processing to be run on multiple images. The built-in [Process > Batch] menu has lots of useful functions.
+
+Download [this zip folder](https://laura190.github.io/warwickcamdu.github.io/material/BBBC008_partial.zip) which contains a subset of data from BBBC008 from the [Broad Bioimage Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC008/) to try it out.
+
+## Convert to a different file type
+
+### :clipboard: Step-by-Step Instructions
+
+| Step | Action | Details |
+|--------|-----------|------------|
+| 1      | Create an output folder | Create an empty folder on your desktop called `Output` |
+| 2      | Open the batch converter | Go to `Process > Batch > Convert...` |
+| 2      | Convert the tif files in BBBC008 to png files | . Click `Input...` and select the BBBC008 folder. Click `Output...` select the folder on the desktop. Select PNG from the `Output format` dropdown. Click `Convert`. |
+
+### :thinking: Investigate
+- What is the difference between the `Interpolation` methods?
+
+## Write the filename onto each image in red
+
+### :clipboard: Step-by-Step Instructions
+
+| Step | Action | Details |
+|--------|-----------|------------|
+| 1      | Create an output folder | Create an empty folder on your desktop called `Output labelled` |
+| 2      | Open the batch macro processor | Go to `Process > Batch > Macro...`. |
+| 3      | Select Input and Output folders | Click `Input...` and select the BBBC008 folder. Click `Output...` select the folder on the desktop. |
+| 4      | Add the `Label` macro code | Select `Label` from the `Add macro code:` drop down. |
+| 5      | Create a string variable containing the title of the image | Above the drawString line in the macro box type `title=getTitle();` |
+| 6      | Replace the string in drawString with the `title` variable | Replace `"Hello"` in drawString with `title` |
+| 7      | Test the macro | Click the `Test` button |
+
+### :thinking: Investigate
+- Why is the text grey?
+- What does "antialiased" mean?
+- How can you save the macro in the Batch Process window?
+
+### :clipboard: Step-by-Step Instructions
+
+| Step | Action | Details |
+|--------|-----------|------------|
+| 1      | Close the test image | Click the close button for the image window. If asked to save the image, click no |
+| 2      | Convert the image to RGB | Click before `setFont` so the cursor is at the start of the macro. Select `Convert to RGB` from the `Add macro code:` drop down.  |
+| 3      | Test the macro  | Click the `Test` button |
+| 4      | If happy with the result, close the test image and run the macro  | Click the close button for the image window. If asked to save the image, click no. Click `Process` in the Batch Process window. |
+
+### :thinking: Investigate
+- Think about what each line of code does. Try explaining it to someone or describe it using an annotation. If you are not unsure what each line does, please ask. (If you reopen the Batch Process window, your previous code should be there).
+- How does changing the parameters in the macro effect the appearance of the title in the image?
+
+## :wrench: Apply Your skills
+
+Try applying the skills you have learnt above and from the Counting and Measuring worksheet to batch process the BBBC008:
+- Set the scale of the image to 0.1 microns per pixel
+- Draw a 10 μm green scale bar in the bottom left corner
+- Print out the filename and spot count to the log ()
+
+Use the Fiji toolbar search and the macro recorder `[Plugins > Macros > Record]` to find out how to write the different commands needed. Test each part of the macro separately before trying to combine them. Use batch processing to apply the macro to all the images. You can use the Script Editor to write the macro if you prefer and then either save it and open in the Batch Process window or copy and paste it into the window. 
+
+### :thinking: Investigate
+- Did the macro stop unexpectedly? Did an error message appear after clicking `Process`? If so, ask for help to fix the errors.
+- Do you think the macro produced an accurate results for the images? Why or why not?
+- Is there anything you could change in the macro to improve the results?
