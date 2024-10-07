@@ -222,6 +222,24 @@ Use the Fiji toolbar search and the macro recorder `Plugins > Macros > Record` t
 - Do you think the macro produced an accurate results for the images? Why or why not?
 - Is there anything you could change in the macro to improve the results?
 
+## More Batch Processing
+
+There are more ways to do Batch processing in Fiji other than `Process > Batch > Macro...` You can also:
+
+- Use `Process > Batch > Macro...` but run it from a macro command (use the recorder to find out how)
+- In the macro editor go to `Templates > ImageJ 1.x > Batch > Process Folder (IJ1 Macro)` and use the template to process all the files in a folder
+- Use [getDir](https://imagej.nih.gov/ij/developer/macro/functions.html#getDir) to request the directory from the user and then write your own loop to process all the files in the folder
+- Use [setBatchMode](https://imagej.nih.gov/ij/developer/macro/functions.html#setBatchMode) to do the processing in the background
+
+### :thinking: Investigate
+- Take a look at `Process Folder (IJ1 Macro)` template, can you work out what it does? Please ask if you are unsure.
+- Can you implement one of the part from the [Apply Your Skills](#-apply-your-skills) section above using either the template or `getDir`?
+- Can you use `setBatchMode` in a macro?
+
+## :floppy_disk: Save your progress
+
+If you haven't already, remember to save your the output from the Macro Recorder so you have a record of what you have done.
+
 # Please complete the learning objective survey
 
 <img src="vevox.png" alt="vevox link" width="100"/> [vevox.app](https://vevox.app/#/m/107492073) Session ID: 107-492-073
