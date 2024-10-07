@@ -6,10 +6,11 @@ There are different sections in the worksheet:
 - Sections of text to provide context
 - **:clipboard: Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
 - **:thinking: Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
+- **:wrench: Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
 
-Please don't skip the thinking sections and just rush through the step-by-step instructions! The thinking sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
+Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
 
-Before starting the worksheet, download the associated Data folder from Moodle and follow the instructions below.
+Before starting the worksheet, download the associated [Data folder]() from Moodle and follow the instructions below.
 
 ### :clipboard: Step-by-Step Instructions
 
@@ -19,7 +20,11 @@ Before starting the worksheet, download the associated Data folder from Moodle a
 | 2      | Open the Macro Recorder | Navigate to `Plugins > Macro > Record`. |
 
 # Learning Objectives
-...
+
+- How to make measurements using selection tools
+- How to use the ROI manager to manage and save selections
+- How to use the Batch Processing window to process multiple images
+- How to stitch images
 
 # :triangular_ruler: Making Measurements
 
@@ -142,3 +147,16 @@ Use the Fiji toolbar search and the macro recorder `[Plugins > Macros > Record]`
 - Did the macro stop unexpectedly? Did an error message appear after clicking `Process`? If so, ask for help to fix the errors.
 - Do you think the macro produced an accurate results for the images? Why or why not?
 - Is there anything you could change in the macro to improve the results?
+
+# Stitching
+
+Increasing the spatial resolution when imaging almost always leads to a reduced field of view. A common areas for this are histology and astronomy. The image below is made up of 690 individual frames taken with the CEERS Near Infrared Camera (NIRCam). There are more details and high resolution images in the [CEERS webpage](https://ceers.github.io/ceers-first-images-release.html).
+
+<img src="CEERS-NIRCAM-Details-flat-220804.jpg" alt="Ceers nircam detailed image" width="800"/>
+
+From: [CEERS-iously wide imaging. Woods, P. Nat Astron (2022), 6, 1007; https://doi.org/10.1038/s41550-022-01790-0](https://doi.org/10.1038/s41550-022-01790-0)
+
+
+# Please complete the learning objective survey
+
+ 

@@ -6,10 +6,11 @@ There are different sections in the worksheet:
 - Sections of text to provide context
 - **:clipboard: Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
 - **:thinking: Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
+- **:wrench: Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
 
-Please don't skip the thinking sections and just rush through the step-by-step instructions! The thinking sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
+Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
 
-Before starting the worksheet, download the associated Data folder from Moodle and follow the instructions below.
+Before starting the worksheet, download the associated [Data](https://moodle.warwick.ac.uk/mod/resource/view.php?id=2619000) from Moodle and follow the instructions below.
 
 ### :clipboard: Step-by-Step Instructions
 
@@ -245,4 +246,6 @@ Open `live_nuclei.tif`. This is a 2D widefield fluorescence image of live nuclei
 
 Using the skills you've learnt during this worksheet, can you count the rings in the `Tree Rings` sample image?
 
-# Please complete the learning objective survey on Moodle
+# Please complete the learning objective survey
+
+<img src="vevox.png" alt="analyze particles" width="100"/>  [Vevox.app Session ID: 195-061-937](https://vevox.app/#/m/195061937)
