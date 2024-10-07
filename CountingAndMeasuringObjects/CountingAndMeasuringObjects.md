@@ -248,4 +248,4 @@ Using the skills you've learnt during this worksheet, can you count the rings in
 
 # Please complete the learning objective survey
 
-<img src="vevox.png" alt="analyze particles" width="100"/>  [Vevox.app Session ID: 195-061-937](https://vevox.app/#/m/195061937)
+<img src="vevox.png" alt="vevox link" width="100"/>  [Vevox.app Session ID: 195-061-937](https://vevox.app/#/m/195061937)
