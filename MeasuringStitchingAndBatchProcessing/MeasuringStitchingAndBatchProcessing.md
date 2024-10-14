@@ -64,7 +64,7 @@ A Results window will appear with measurements made based on the rectangular sel
 - What happens if you hold shift while drawing the rectangle?
 - Can you move the same sized rectangle to another part of the image?
 
-## :card_file_box: ROI Manager
+## 🗃️ ROI Manager
 
 The **ROI (region of interest) manager** is used to store and measure selections.
 
