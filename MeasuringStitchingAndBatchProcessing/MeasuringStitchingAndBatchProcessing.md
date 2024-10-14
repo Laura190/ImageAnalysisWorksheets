@@ -48,7 +48,7 @@ A plot will appear with **Grey Value** on the y-axis and **Distance** on the x-a
 - Double clicking the Line selection tool lets to change the width of the line, how does this change the intensity profile?
 - What happens if you hold shift while drawing the line?
 
- ### 📋 Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|

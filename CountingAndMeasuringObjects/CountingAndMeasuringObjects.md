@@ -232,7 +232,7 @@ If you are happy with the workflow you have created in the previous section, sav
 - Is the result from running the macro the same as when you did it manually? If not, why not?
 - Think about what each line of code does. Try explaining it to someone or describe it using an annotation. If you are not unsure what each line does, please ask.
 
-## :recycle: Apply the Macro to Another Image
+## ♻️ Apply the Macro to Another Image
 
 Open `live_nuclei.tif`. This is a 2D widefield fluorescence image of live nuclei. Try running your macro on this image.
 
