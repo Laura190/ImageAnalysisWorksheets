@@ -4,7 +4,7 @@ This worksheet is not assessed. Please work through it at your own pace. You may
 
 There are different sections in the worksheet:
 - Sections of text to provide context
-- **:clipboard: Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
+- **📋 Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
 - **:thinking: Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
 - **:wrench: Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
 
@@ -12,7 +12,7 @@ Please don't skip the Investigate sections and just rush through the Step-by-Ste
 
 Before starting the worksheet, download the associated [Data](https://moodle.warwick.ac.uk/mod/resource/view.php?id=2619000) from Moodle and follow the instructions below.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -38,7 +38,7 @@ You will also learn how to use tools in Fiji to:
 
 A common task in image analysis is counting how many objects are in an image. In fluorescence microscopy images objects are identified as having a different intensity from the background. We can use a tool called `Find Maxima` to identify location of objects and count how many there are. The `Find Maxima` tool identifies local maxima based on a user defined **prominence** value. The prominence value is a measure of how distinct a peak is from it's surroundings. The higher the prominence value, the more distinct a peak is from it's surroundings. The `Find Maxima` tool can also identify local minima by selecting the **Light background** option.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step   | Action    | Details |
 |--------|-----------|------------|
@@ -60,7 +60,7 @@ A common task in image analysis is counting how many objects are in an image. In
 
 There are some small areas of noise in the image, which causes the `Find Maxima` count to be incorrect. Changing the prominence value doesn't help because those small areas of noise are more distinct from the background than some of the dots. To get a more accurate count, a filter can be used before running the `Find Maxima` tool. 
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step   | Action    | Details |
 |--------|-----------|------------|
@@ -93,7 +93,7 @@ A binary mask can be used to count, measure or visualise objects.
 
 Thresholding separates the pixels in an image into two (or more) classes based on intensity. Usually the classes are **foreground** (the objects we care about) and the **background** (the area we don't). This creates a binary mask which can be used for counting, measuring, or visualizing the objects of interest.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -112,7 +112,7 @@ Thresholding separates the pixels in an image into two (or more) classes based o
 
 A manual threshold can be inconsistent and subjective. To overcome these issues, automatic thresholding methods can be used.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
