@@ -4,15 +4,15 @@ This worksheet is not assessed. Please work through it at your own pace. You may
 
 There are different sections in the worksheet:
 - Sections of text to provide context
-- **:clipboard: Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
-- **:thinking: Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
-- **:wrench: Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
+- **📋 Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
+- **🤔 Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
+- **🔧 Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
 
 Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
 
 Before starting the worksheet, download the associated [Data folder]() from Moodle and follow the instructions below.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -28,11 +28,11 @@ You may want to save the output of the Recorder are restart it at the end of eac
 - How to stitch images together
 - How to use the Batch Processing window to process multiple images
 
-# :triangular_ruler: Making Measurements
+# 📐 Making Measurements
 
 In the previous worksheet, we used `Analyze Particles` to identify and measure objects. There are more ways to make measurements in Fiji.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -43,12 +43,12 @@ In the previous worksheet, we used `Analyze Particles` to identify and measure o
 
 A plot will appear with **Grey Value** on the y-axis and **Distance** on the x-axis. The Distance is the distance along the drawn line. The Grey Value is the intensity of the pixels along the line.
 
-### :thinking: Investigate
+### 🤔 Investigate
 - If you used an RGB image, what value is plotted by Plot Profile?
 - Double clicking the Line selection tool lets to change the width of the line, how does this change the intensity profile?
 - What happens if you hold shift while drawing the line?
 
- ### :clipboard: Step-by-Step Instructions
+ ### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -58,7 +58,7 @@ A plot will appear with **Grey Value** on the y-axis and **Distance** on the x-a
 
 A Results window will appear with measurements made based on the rectangular selection. The measurements can be selected by changing the settings in `Analyze > Set Measurements` (see the [CountingAndMeasuringObjects](CountingAndMeasuringObjects/CountingAndMeasuringObjects.md) worksheet for more details).
 
-### :thinking: Investigate
+### 🤔 Investigate
 - If you used an RGB image, what values are used for the intensity measurements?
 - What does double clicking the Rectangle selection tool do?
 - What happens if you hold shift while drawing the rectangle?
@@ -68,7 +68,7 @@ A Results window will appear with measurements made based on the rectangular sel
 
 The **ROI (region of interest) manager** is used to store and measure selections.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -78,7 +78,7 @@ The **ROI (region of interest) manager** is used to store and measure selections
 | 4      | Measure all the selections | In the ROI manager window, click `More > Multi-measure`. Leave the default settings and click OK for the dialog box that appears. A results window will appear with measurements for each selection |
 | 5      | Save the selections | In the ROI manager window, click `More > Save...`. Select the save location and name the file. Click Save. |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - What happens if you select/don't select the **One row per slice** option in the multi-measure dialog box?
 - Why is it a good idea to save the selections you have made with the measurements? Please ask if you are unsure.
 - What happens if you click `Measure` in the ROI manager rather than using multi-measure?
@@ -110,9 +110,9 @@ Most importantly, before you start you need to know your data:
 - Overlap
 - Calibration
 
-## :broken_heart: No Overlap
+## 💔 No Overlap
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -122,12 +122,12 @@ Most importantly, before you start you need to know your data:
 | 4      | Select the appropriate settings: <br>Grid Size: 2x2 <br>Tile Overlap: 0 <br> Directory: {path to your folder}<br> File Names: replace the numbers with {i} zero pad with more i - noOverlap_{iii}.tif<br> Uncheck all the options except `Add tiles as ROIs` | Match the settings below except for the `Directory` path. Set that to where you unzipped `Stitching_noOverlap.zip` <br> <img src="stitch_04.png" alt="Stitching options" width="500"/>|
 | 5      | Run the stitching  | Click OK and accept fast fusion if asked. |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - What does the resulting image show? Is it what you expect?
 - What information do the messages in the Log window provide?
 - Think about the settings you used. What do they tell the software?
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -136,13 +136,13 @@ Most importantly, before you start you need to know your data:
 | 3      | Use previous settings and add `compute overlap` | Check the previous settings are still selected and additionally check the `compute overlap` option |
 | 5      | Run the stitching  | Click OK |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - What does the resulting image show? Is it what you expect?
 - What information do the messages in the Log window provide?
 
-## :heart: With Overlap
+## ❤️ With Overlap
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -152,12 +152,12 @@ Most importantly, before you start you need to know your data:
 | 4      | Use the previous settings except: <br>Tile Overlap: 10% <br> Directory: {path to your folder}<br> File Names: replace the numbers with {i} zero pad with more i - Overlap_{iii}.tif<br> Check `Add tiles as ROIs` | Set the `Tile Overlap` to 10%. Change the directory path to where you unzipped `Stitching_Overlap.zip`. In File Names, remove the no before Overlap_{iii}.tif |
 | 5      | Run the stitching  | Click OK |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - What does the resulting image show? Is it what you expect?
 - What information do the messages in the Log window provide?
 - Think about the settings you used. What do they tell the software?
 
-# Batch Processing
+# ⚙️ Batch Processing
 
 Batch processing allows the same processing to be run on multiple images. The built-in [Process > Batch] menu has lots of useful functions.
 
@@ -165,7 +165,7 @@ Unzip `BBBC008_partial.zip` from the Data folder which contains a subset of data
 
 ## Convert to a different file type
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -173,12 +173,12 @@ Unzip `BBBC008_partial.zip` from the Data folder which contains a subset of data
 | 2      | Open the batch converter | Go to `Process > Batch > Convert...` |
 | 2      | Convert the tif files in BBBC008 to png files | . Click `Input...` and select the unzipped BBBC008 folder. Click `Output...` select the folder on the desktop. Select PNG from the `Output format` dropdown. Click `Convert`. |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - What is the difference between the `Interpolation` methods?
 
 ## Write the filename onto each image in red
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -190,12 +190,12 @@ Unzip `BBBC008_partial.zip` from the Data folder which contains a subset of data
 | 6      | Replace the string in drawString with the `title` variable | Replace `"Hello"` in drawString with `title` |
 | 7      | Test the macro | Click the `Test` button |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Why is the text grey?
 - What does "antialiased" mean?
 - How can you save the macro in the Batch Process window?
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
@@ -204,11 +204,11 @@ Unzip `BBBC008_partial.zip` from the Data folder which contains a subset of data
 | 3      | Test the macro  | Click the `Test` button |
 | 4      | If happy with the result, close the test image and run the macro  | Click the close button for the image window. If asked to save the image, click no. Click `Process` in the Batch Process window. |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Think about what each line of code does. Try explaining it to someone or describe it using an annotation. If you are not unsure what each line does, please ask. (If you reopen the Batch Process window, your previous code should be there).
 - How does changing the parameters in the macro effect the appearance of the title in the image?
 
-## :wrench: Apply Your skills
+## 🔧 Apply Your skills
 
 Try applying the skills you have learnt above and from the Counting and Measuring worksheet to batch process the BBBC008:
 - Set the scale of the image to 0.1 microns per pixel
@@ -217,12 +217,12 @@ Try applying the skills you have learnt above and from the Counting and Measurin
 
 Use the Fiji toolbar search and the macro recorder `Plugins > Macros > Record` to find out how to write the different commands needed. Test each part of the macro separately before trying to combine them. Use batch processing to apply the macro to all the images. You can use the Script Editor to write the macro if you prefer and then either save it and open in the Batch Process window or copy and paste it into the window. 
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Did the macro stop unexpectedly? Did an error message appear after clicking `Process`? If so, ask for help to fix the errors.
 - Do you think the macro produced an accurate results for the images? Why or why not?
 - Is there anything you could change in the macro to improve the results?
 
-## More Batch Processing
+## 🚲 More Batch Processing
 
 There are more ways to do Batch processing in Fiji other than `Process > Batch > Macro...` You can also:
 
@@ -231,12 +231,12 @@ There are more ways to do Batch processing in Fiji other than `Process > Batch >
 - Use [getDir](https://imagej.nih.gov/ij/developer/macro/functions.html#getDir) to request the directory from the user and then write your own loop to process all the files in the folder
 - Use [setBatchMode](https://imagej.nih.gov/ij/developer/macro/functions.html#setBatchMode) to do the processing in the background
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Take a look at `Process Folder (IJ1 Macro)` template, can you work out what it does? Please ask if you are unsure.
 - Can you implement one of the part from the [Apply Your Skills](#-apply-your-skills) section above using either the template or `getDir`?
 - Can you use `setBatchMode` in a macro?
 
-## :floppy_disk: Save your progress
+## 💾 Save your progress
 
 If you haven't already, remember to save your the output from the Macro Recorder so you have a record of what you have done.
 

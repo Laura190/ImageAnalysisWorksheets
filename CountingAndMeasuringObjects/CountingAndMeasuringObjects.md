@@ -5,8 +5,8 @@ This worksheet is not assessed. Please work through it at your own pace. You may
 There are different sections in the worksheet:
 - Sections of text to provide context
 - **📋 Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
-- **:thinking: Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
-- **:wrench: Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
+- **🤔 Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
+- **🔧 Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
 
 Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
 
@@ -51,12 +51,12 @@ A common task in image analysis is counting how many objects are in an image. In
 | 7      | Select the Preview point selection option | Check the Preview point selection box |
 | 8      | Note the number of dots identified | The number of maxima will be show in the lower left of the `Find Maxima` dialog box |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Does the number of dots identified by `Find Maxima` match your manual count? Why not?
 - Can you alter the prominence value to get a more accurate count? Why not?
 - What else could you try to get a more accurate count? What preprocessing steps could you take?
 
-## :salt: Applying a Filter
+## 🧂 Applying a Filter
 
 There are some small areas of noise in the image, which causes the `Find Maxima` count to be incorrect. Changing the prominence value doesn't help because those small areas of noise are more distinct from the background than some of the dots. To get a more accurate count, a filter can be used before running the `Find Maxima` tool. 
 
@@ -70,7 +70,7 @@ There are some small areas of noise in the image, which causes the `Find Maxima`
 | 4      | Check the other settings are the same a before | Look at the previous instructions and check that the options in steps 5-7 are selected. |
 | 5      | Note the number of dots identified | The number of maxima will be show in the lower left of the `Find Maxima` dialog box |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Does the number of dots identified by `Find Maxima` match your manual count?
 - Why was the value of 4 used for the radius of the median filter?
 - What value should you enter for the prominence value to count only the 3 darkest dots?
@@ -89,7 +89,7 @@ Sometimes we want to know more about our objects than just how many there are, s
 
 A binary mask can be used to count, measure or visualise objects.
 
-## :performing_arts: Thresholding
+## 🎭 Thresholding
 
 Thresholding separates the pixels in an image into two (or more) classes based on intensity. Usually the classes are **foreground** (the objects we care about) and the **background** (the area we don't). This creates a binary mask which can be used for counting, measuring, or visualizing the objects of interest.
 
@@ -102,13 +102,13 @@ Thresholding separates the pixels in an image into two (or more) classes based o
 | 3      | Experiment with Manual Thresholds | Go to `Image > Adjust > Threshold` and move the sliders. Watch how the red area on the image changes as you move the slider. <br> <img src="Threshold.png" alt="Threshold" width="250"/> |
 | 4      | Create a Mask | Click "Apply" |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Why did you need to invert the LUT? If you are not sure, please ask.
 - What do the two sliders do?
 - What difference does checking the Dark background box make to the mask?​
 - Look in the macro recorder output, which lines set the threshold value and apply the mask?​
 
-## :computer: Automatic Thresholding
+## 💻 Automatic Thresholding
 
 A manual threshold can be inconsistent and subjective. To overcome these issues, automatic thresholding methods can be used.
 
@@ -122,12 +122,12 @@ A manual threshold can be inconsistent and subjective. To overcome these issues,
 
 A montage showing the results from the different automatic thresholding methods should appear. The name of the method is written under each binary copy of blobs, you may need to zoom in using the magnifying tool to read them. Ask for help if you don't get an image montage or you can't see the method names.
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Which automatic thresholding method gives the best results for thresholding the blobs image?
 - Look up the description of that method on the [Auto Threshold page on the ImageJ website](https://imagej.net/plugins/auto-threshold). Decide if the method you chose is suitable for thresholding the blobs image, e.g. does the method make any assumptions about the histogram?
 - Why are the results for the Default and IsoData algorithms similar?
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step  | Action | Details |
 |-------|-----------|------------|
@@ -141,7 +141,7 @@ You should now have a binary mask of the blobs image. If not, please ask for hel
 
 Connected component analysis (CCA) is used to identify contiguous (joined up) objects in a mask. In Fiji for 2D images this can be done using the [Analyze Particles](https://imagej.net/ij/docs/menus/analyze.html#ap) tool.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step  | Action | Details |
 |-------|-----------|------------|
@@ -151,11 +151,11 @@ Connected component analysis (CCA) is used to identify contiguous (joined up) ob
 
 You should get Results window with some measurements as well as an image where each blob is a different shade of grey. If you want to display the results with each blob a different colour, change the Look Up Table (LUT). Click the LUT button in the Fiji Toolbar and select one of the **glasbey** options.
 
-## :triangular_ruler: Measurements
+## 📐 Measurements
 
 The measurements you see in the Results window will depend on the settings in Fiji. Some useful measurements to make when working with `Analyse Particles` are Area, which relates to the Size parameter and Circularity, which relates to the shape of the objects. The `Set Measurements` tool is used to choose what measurements are made. Read the [Set Measurements...](https://imagej.net/ij/docs/menus/analyze.html#set) documentation for information about the different measurements.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step  | Action | Details |
 |-------|-----------|------------|
@@ -167,7 +167,7 @@ Particles of any size and shape are measured, which can introduce errors when me
 - Small objects containing only a few pixels, as they are likely noise.
 - Objects on the image borders, as they are partial objects and incomplete.
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Using the measurements in the results table, can you change the settings in `Analyze Particles` to exclude small objects?
 - Can you change the settings in `Analyze Particles` to exclude objects on the image borders?
 - Try out some of the different options in the `Show` drop down box to view the different outputs available.
@@ -175,7 +175,7 @@ Particles of any size and shape are measured, which can introduce errors when me
 - Try using `Find Maxima` on the same image, do both methods count the same number of objects? Why or why not?
 Please ask for help if you are unsure how to exclude objects from the `Analyze Particles` results or if you aren't sure how to use `Find Maxima`.
 
-## :checkered_flag: Binary operations
+## 🏁 Binary operations
 
 Sometimes just thresholding an image does not create a binary mask suitable for connected component analysis. If this is the case, binary operations can be used to improve the suitability of the mask. The binary operations available in Fiji are described in the ImageJ documentation in the [binary section of the process menu](https://imagej.net/ij/docs/menus/process.html#binary).
 
@@ -187,18 +187,18 @@ One tool that is helpful when segmenting round objects like nuclei or nanopartic
 | 2     | Apply watershed segmentation | Navigate to `Process > Binary > Watershed`. |
 | 3     | Run connected component analysis | Navigate to `Analyze > Analyze Particles` and run the tool with suitable settings (the previous settings should work) |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - How did the watershed segmentation change the mask?
 - What is the difference between the binary operations erode and dilate? How do they affect the measurements?
 - What is the difference between the binary operations opening and closing? How do they affect the measurements?
 - What does `skeletonize` do? Can you think of a situation when you might use it?
 Please ask for help if you are uncertain how to apply the watershed segmentation or are unclear what the binary operations do.
 
-## :floppy_disk: Save your current progress
+## 💾 Save your current progress
 
 While you have been working the Macro Recorder has been keeping a list of all the commands you have run by clicking in the graphical interface. Some of these will be things you meant to do, some will be things you clicked accidentally and some will be things you tried and rejected. It can be useful to save the Recorder output in case you want to revisit what you have done or remind yourself how you did something .
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step  | Action | Details |
 |-------|-----------|------------|
@@ -208,7 +208,7 @@ While you have been working the Macro Recorder has been keeping a list of all th
 
 This Macro file may not actually run or do anything useful, it is simply to keep a record of what you have tried. For saving the Macro Recorder output, you may find it useful to include the date and a short description of what you were attempting to do or include record in the title, e.g. 20241010_segment_blobs.ijm. This will make the recordings easily identifiable from the macros you write yourself that do run.
 
-## :wrench: Apply Your skills
+## 🔧 Apply Your skills
 
 Try applying the skills you have learnt above to segment, count and measure the nuclei in `nuclei.tif` Once the file has downloaded you can open it in Fiji either by clicking and dragging the file to the main Fiji window or using `File > Open...`. Make sure you have the Macro Recorder open to keep track of what you are doing. If you want to clear the Recorder before you start, close the window and open it again. The steps you should take are:
 - Threshold the nuclei to create a binary mask.
@@ -216,18 +216,18 @@ Try applying the skills you have learnt above to segment, count and measure the 
 - Use connected component analysis to count the individual nuclei.
 You will need to test different methods and settings to find a workflow that counts the nuclei accurately.
 
-## :writing_hand: Creating a Macro
+## ✍️ Creating a Macro
 
 If you are happy with the workflow you have created in the previous section, save the output of the Recorder and clear it. Redo the steps of your workflow so that the Recorder contains only the necessary commands. You can delete individual lines from the Recorder by clicking on the line and using backspace or delete. Use the recording to create a Macro.
 
-### :clipboard: Step-by-Step Instructions
+### 📋 Step-by-Step Instructions
 
 | Step  | Action | Details |
 |-------|-----------|------------|
 | 1     | Open the nuclei image | Click and drag the nuclei.tif file in to the main window of Fiji or open it using `File > Open...` |
 | 2     | Run the macro on the nuclei image | Click `Run` in the Script Editor Window. |
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Did the macro stop unexpectedly? Did an error message appear after clicking `Run`? If so, ask for help to fix the errors.
 - Is the result from running the macro the same as when you did it manually? If not, why not?
 - Think about what each line of code does. Try explaining it to someone or describe it using an annotation. If you are not unsure what each line does, please ask.
@@ -236,13 +236,13 @@ If you are happy with the workflow you have created in the previous section, sav
 
 Open `live_nuclei.tif`. This is a 2D widefield fluorescence image of live nuclei. Try running your macro on this image.
 
-### :thinking: Investigate
+### 🤔 Investigate
 - Did the macro stop unexpectedly? Did an error message appear after clicking `Run`? If so, ask for help to fix the errors.
 - Do you think the macro produced an accurate results on this new image? Why or why not?
 - Is there anything you could change in the macro to improve the results?
 - Try using `Find Maxima` on the same image. Do both methods count the same number of cells? Why or why not?
 
-## :wrench: Apply Your skills
+## 🔧 Apply Your skills
 
 Using the skills you've learnt during this worksheet, can you count the rings in the `Tree Rings` sample image?
 
