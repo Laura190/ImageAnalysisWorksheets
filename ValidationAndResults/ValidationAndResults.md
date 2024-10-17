@@ -16,7 +16,7 @@ Method: Calculate the mean relative error
 
 $$ mean\ relative\ error = \frac{measured\ value - true\ value}{true\ value}$$
 
-## Comparison of cell count
+## 🔢 Comparison of cell count
 
 The number of cells in AS_09125_050118150001_A03f00d0.tif were counted manually by two different human observers. The first person counted 350 cells and the second person counted 362 cells in this image. The mean of the manual counts is 531.
 
@@ -38,7 +38,7 @@ $$ Specificity = \frac{True\ Negatives}{True\ Negatives + False\ Positives}$$
 
 The fraction of correct detection when the thing is not present, 0 all falsely detected to 1 none falsely detected
 
-## Example - Classification of Dots
+## 🗂️ Classification of Dots
 
 The dots in the Dot Blot sample image have been classified by an automated algorithm. The results have been compared to a manual classification by an expert in the field. The dots in orange squares are <span style="color: #ff9900;">True Positives</span>, the dots in the green squares are <span style="color: #00b913;">False Negatives</span>, the dots in magenta squares are <span style="color: #ff00e5;">False Positives</span> and the dots in teal squares are <span style="color: #00b99e;">True Negatives</span>. Calculate the sensitivity and specificity of the automated algorithm.
 
@@ -54,21 +54,60 @@ $$ root\ mean\ square\ error = \sqrt{\frac{\sum^N_{i=1}\left(\mathbf{x^s_i}-\mat
 
 where $N$ is the number of points, $x^s_i$ are the points that make up the segmented boundary and $x^g_i$ are the points that make up the ground truth boundary. This is to calculate the root mean square error, but other metrics can also be used, e.g. Hausdorff distance
 
-## Example: Segment graphene grains
+## 🧩 Segment graphene grains
 
 Segment the large graphene grain (dark region) in graphite_image.tif. Use the rmse2Dselections.ijm macro to calculate the root mean square error between your segmentation and the ground truth segmentation in graphite_mask.tif. Take a look at the macro first to figure out how it works and what inputs you need to provide. If you are not sure, please ask.
 
 The graphite data is from (nanoMFG)[https://github.com/nanoMFG/unet-sem/tree/master].
 
-# Training and Testing
+For more information on validation see Chapter 10 of Handbook of Medical Imaging, Volume 2. Medical Image Processing and Analysis (K. Bowyer, 2000).
 
-- Let's assume you have some ground truth data for your images that has been obtained using the "gold standard" method
-- You also have the original dataset, on which no analysis has been performed
-- When developing an algorithm, a portion of the data will be used for training the algorithm and a portion will be used for testing
-- While more testing data will produce in more accurate results. However, evaluating the ground truth is often a manual, user intensive process, so there is a balance to be found when deciding how much testing data to use. 
-- The testing data should be representative of the whole dataset.
+# Machine Learning
 
-This is how machine learning algorithms are trained. For more information on validation see Chapter 10 of Handbook of Medical Imaging, Volume 2. Medical Image Processing and Analysis (K. Bowyer, 2000)
+Machine learning is a branch of artificial intelligence that trains algorithms based on data. If you a dataset and have obtained the ground truth data using the "gold standard" method, you may be able train a machine learning algorithm. You will need **enough** data and associated ground truth data, however it is difficult to know how much data is enough. It is dependent on the complexity of the task to be accomplished, the quality of the data available and the required accuracy of the results. You may need tens of thousands of samples for some tasks, but hundreds of samples may be enough for simpler tasks. Evaluating the ground truth data is often a manual, user intensive process, so there is a balance to be found when deciding how much testing data to use.of samples. Assuming that you have enough training data and that is representative of the whole dataset, a portion of the data will be used to train the algorithm and a portion will be used for testing.
+
+Machine Learning
+
+    Algorithms designed to find patterns in data
+    Training (supervised learning) takes a set of input data and it's known outputs and trains a model to predict the output for new data
+    Classfication models separate input data into categories
+
+    Machine learning can also be used for:
+        Denoising
+        Isotropic Reconstruction
+        Surface Projection
+    See (CSBDeep)[https://csbdeep.bioimagecomputing.com/] for examples
+    Training a model can be very time consuming, it can require a lot of user input and computing time. Using a Graphical Processing Unit (GPU) rather than the Central Processing Unit (CPU) can speed up the processing time.
+
+    (Trainable Weka Segmentation Fiji Plugin)[https://imagej.net/plugins/tws/]
+    Combines a collection of machine learning algorithms with selected image features to produce segmentations
+    Other software options include:
+        (ilastik)[https://www.ilastik.org/index.html]
+        (LabKit)[https://imagej.net/plugins/labkit/]
+        (Paintera)[https://github.com/saalfeldlab/paintera]
+
+    Download this folder and unzip. This is a subset of BBBC008 from the Broad Bioimage Benchmark Collection (same dataset as used in Workshop 2)
+    In Fiji, [Plugins > Segmentation > Trainable Weka Segmentation], select one of the images to open.
+
+<img src="train1.png" alt="Weka train 1" width="600"/>
+
+    Click and drag to draw on the image
+    Draw a line in the background (dark area) and click Add to class 1 (on the right)
+    Draw a line in one or two of the nuclei (light area) and click Add to class 2
+    Click Train classifier (on the left)
+
+<img src="train2.png" alt="Weka train 2" width="600"/>
+
+    Add more labels and retrain the classifier, to improve the result
+    [Optional] Click Settings and select/deselect different "Training features". Retrain the classifier to see how the different features change the result. For more information about each feature, visit the Plugin webpage
+    When you are happy with the result, click Apply classifier and select a different image from the data set. Does the classifier work well for this image too?
+    Click Save data and save the data.arff file
+
+    Close the Trainable Weka Segmentation Window and any other open image windows
+    [Plugins > Segmentation > Trainable Weka Segmentation] and select another image to open.
+    Click and open the data.arff file
+    Click Train classifier. This will apply the classifier from the previous image
+    Add more labels and click Train classifier again. This allows you to train on multiple images
 
 # Built-in Functions
 
