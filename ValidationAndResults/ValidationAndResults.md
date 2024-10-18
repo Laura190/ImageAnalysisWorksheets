@@ -315,6 +315,9 @@ You can train on multiple images:
 | 6      | Add the selection to class 2 | Click ```Add to class 2``` on the right |
 | 7      | Train the model | Add more labels and click Train classifier again. |
 
+### 🤔 Investigate
+- Does training on another image improve the results?
+- Can you apply the classifier to all the images in the BBBC008_partial folder?
 
 # Built-in Functions
 
