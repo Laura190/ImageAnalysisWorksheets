@@ -1,3 +1,17 @@
+# Preparation
+
+This worksheet is not assessed. Please work through it at your own pace. You may work on your own, with a partner or in a small group.
+
+There are different sections in the worksheet:
+- Sections of text to provide context
+- **📋 Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
+- **🤔 Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
+- **🔧 Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
+
+Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
+
+Before starting the worksheet, download the associated Data folder from Moodle and follow the instructions below.
+
 # Validation
 
 After designing an image analysis workflow it is important to validate it, especially if you are planning to use the same process on multiple images. The validation strategies used will depend on the type of problem.
@@ -115,3 +129,9 @@ You can train on multiple images:
 ### 🤔 Investigate
 - Does training on another image improve the results?
 - Can you apply the classifier to all the images in the BBBC008_partial folder?
+- 
+## 💾 Save your progress
+
+If you haven't already, remember to save your the output from the Macro Recorder so you have a record of what you have done.
+
+# Please complete the learning objective survey
