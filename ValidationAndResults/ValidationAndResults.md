@@ -300,26 +300,21 @@ Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad
 - Can you improve the results by adding more labels and retraining the classifier?
 - In the setting menu of the Weka plugin, you can select or deselect different "Training features". How does removing or adding a training feature change the results when you retrain the model? If you can't find these settings please ask. For more information about each feature, visit the Plugin webpage
 - When you are happy with the result, click Apply classifier and select a different image from the data set. Does the classifier work well for this image too?
-    
+
+You can train on multiple images:
 
 ### 📋 Step-by-Step Instructions
 
 | Step | Action | Details |
 |--------|-----------|------------|
-| 1      | Open the Trainable Weka Segmentation Plugin in Fiji  | In Fiji, navigate to [Plugins > Segmentation > Trainable Weka Segmentation] |
-| 2      | Open on the images from the subset of the BBBC008 data | Select one of the images for the BBB008_partial folder |
-| 3      | Draw a line in the background of the image | Click and drag on the dark region of the image |
-| 4      | Add the selection to class 1 | Click ```Add to class 1``` on the right |
-| 5      | Draw a line on one or two of the nuclei | Click and drag on one or two of the light regions in the image |
+| 1      | Save the model | Click Save data and save the data.arff file |
+| 2      | Close all open Fiji windows | Close the Trainable Weka Segmentation Window and any other open image windows |
+| 3      | Start the Weka Plugin | [Plugins > Segmentation > Trainable Weka Segmentation] and select another image to open. |
+| 4      | Load the previous model | Click and open the data.arff file |
+| 5      | Apply the classifier from the previous model | Click ```Train classifier``` |
 | 6      | Add the selection to class 2 | Click ```Add to class 2``` on the right |
-| 7      | Train the model | Click ```Train classifier``` on the left |
+| 7      | Train the model | Add more labels and click Train classifier again. |
 
-    Click Save data and save the data.arff file
-    Close the Trainable Weka Segmentation Window and any other open image windows
-    [Plugins > Segmentation > Trainable Weka Segmentation] and select another image to open.
-    Click and open the data.arff file
-    Click Train classifier. This will apply the classifier from the previous image
-    Add more labels and click Train classifier again. This allows you to train on multiple images
 
 # Built-in Functions
 
