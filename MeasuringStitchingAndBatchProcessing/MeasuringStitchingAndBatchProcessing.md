@@ -134,7 +134,7 @@ Most importantly, before you start you need to know your data:
 | 1      | Close all the additional windows | Click the window close buttons on all Fiji windows except the main toolbar and the macro recorder |
 | 2      | Run the Stitching plugin | Run `Plugins > Stitching > Grid/Collection Stitching` |
 | 3      | Use previous settings and add `compute overlap` | Check the previous settings are still selected and additionally check the `compute overlap` option |
-| 5      | Run the stitching  | Click OK |
+| 4      | Run the stitching  | Click OK |
 
 ### 🤔 Investigate
 - What does the resulting image show? Is it what you expect?
