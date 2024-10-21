@@ -7,4 +7,5 @@ Worksheets for developing image analysis skills with [Fiji](https://imagej.net/s
 1. [Counting and Measuring Objects](CountingAndMeasuringObjects/CountingAndMeasuringObjects.md)
 2. [Measuring, Stitching and Batch Processing](MeasuringStitchingAndBatchProcessing/MeasuringStitchingAndBatchProcessing.md)
 3. [Validation And Machine Learning](ValidationAndMachineLearning/ValidationAndMachineLearning.md)
-4. Tracking and Results Management[]()
+4. [Tracking and Results Management](TrackingAndResultsManagement/TrackingAndResultsManagement.md)
+5. [Deconvolution and Colocalisation](DeconvolutionAndColocalisation/DeconvolutionAndColocalisation.md)
