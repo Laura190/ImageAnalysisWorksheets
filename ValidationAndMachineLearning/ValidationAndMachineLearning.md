@@ -94,7 +94,7 @@ The [Trainable Weka Segmentation Fiji Plugin](https://imagej.net/plugins/tws/) c
 - [LabKit](https://imagej.net/plugins/labkit/)
 - [Paintera](https://github.com/saalfeldlab/paintera)
 
-Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad Bioimage Benchmark Collection (the same dataset was used in the [Measuring, Stitching and Batch Processing Worksheet](MeasuringStitchingAndBatchProcessing/MeasuringStitichingAndBatchProcessing.md))
+Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad Bioimage Benchmark Collection (the same dataset was used in the [Measuring, Stitching and Batch Processing Worksheet](MeasuringStitchingAndBatchProcessing/MeasuringStitichingAndBatchProcessing.md)).
 
 ### 📋 Step-by-Step Instructions
 
