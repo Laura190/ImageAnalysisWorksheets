@@ -10,7 +10,7 @@ There are different sections in the worksheet:
 
 Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
 
-Before starting the worksheet, download the associated (Data folder from Moodle)[https://moodle.warwick.ac.uk/mod/resource/view.php?id=2629241] and start Fiji.
+Before starting the worksheet, download the associated [Data folder from Moodle](https://moodle.warwick.ac.uk/mod/resource/view.php?id=2629241) and start Fiji.
 
 # Learning Objectives:
 - How to quantitatively validate image analysis workflows
@@ -41,7 +41,7 @@ The number of cells in AS_09125_050118150001_A03f00d0.tif were counted manually 
 
 Automatically count the number of cells in AS_09125_050118150001_A03f00d0.tif using the ```Find Maxima...``` tool. Calculate the mean relative error between the count from ```Find Maxima...``` (measured value) and the mean manual count (true value).
 
-The image and manual counts are from (BBBC001)[https://bbbc.broadinstitute.org/BBBC001].
+The image and manual counts are from [BBBC001](https://bbbc.broadinstitute.org/BBBC001).
 
 # Validation of Classification Problem
 
@@ -77,7 +77,7 @@ where $N$ is the number of points, $x^s_i$ are the points that make up the segme
 
 Segment the large graphene grain (dark region) in graphite_image.tif. Use the rmse2Dselections.ijm macro to calculate the root mean square error between your segmentation and the ground truth segmentation in graphite_mask.tif. Take a look at the macro first to figure out how it works and what inputs you need to provide. If you are not sure, please ask.
 
-The graphite data is from (nanoMFG)[https://github.com/nanoMFG/unet-sem/tree/master].
+The graphite data is from [nanoMFG](https://github.com/nanoMFG/unet-sem/tree/master).
 
 For more information on validation see Chapter 10 of Handbook of Medical Imaging, Volume 2. Medical Image Processing and Analysis (K. Bowyer, 2000).
 
@@ -85,16 +85,16 @@ For more information on validation see Chapter 10 of Handbook of Medical Imaging
 
 Machine learning is a branch of artificial intelligence that trains algorithms based on data. If you a dataset and have obtained the ground truth data using the "gold standard" method, you may be able train a machine learning algorithm. You will need **enough** data and associated ground truth data, however it is difficult to know how much data is enough. It is dependent on the complexity of the task to be accomplished, the quality of the data available and the required accuracy of the results. You may need tens of thousands of samples for some tasks, but hundreds of samples may be enough for simpler tasks. Evaluating the ground truth data is often a manual, user intensive process, so there is a balance to be found when deciding how much testing data to use.of samples. Assuming that you have enough training data and that is representative of the whole dataset, a portion of the data will be used to train the algorithm and a portion will be used for testing.
 
-Machine learning algorithms are designed to find patterns in data. **Training** (supervised learning) takes a set of input data and it's known outputs and trains a model to predict the output for new data. Machine learning can be used to train classfication models, which separate input data into categories. It can also be used for denoising, isotropic reconstruction and surface projections (See (CSBDeep)[https://csbdeep.bioimagecomputing.com/] for examples). Training a model can be very time consuming, it can require a lot of user input and computing time. Using a Graphical Processing Unit (GPU) rather than the Central Processing Unit (CPU) can speed up the processing time.
+Machine learning algorithms are designed to find patterns in data. **Training** (supervised learning) takes a set of input data and it's known outputs and trains a model to predict the output for new data. Machine learning can be used to train classfication models, which separate input data into categories. It can also be used for denoising, isotropic reconstruction and surface projections (See [CSBDeep](https://csbdeep.bioimagecomputing.com/) for examples). Training a model can be very time consuming, it can require a lot of user input and computing time. Using a Graphical Processing Unit (GPU) rather than the Central Processing Unit (CPU) can speed up the processing time.
 
 ## Machine Learning for Pixel Classification
 
-The (Trainable Weka Segmentation Fiji Plugin)[https://imagej.net/plugins/tws/] combines a collection of machine learning algorithms with selected image features to produce segmentations. Other software options include:
-- (ilastik)[https://www.ilastik.org/index.html]
-- (LabKit)[https://imagej.net/plugins/labkit/]
-- (Paintera)[https://github.com/saalfeldlab/paintera]
+The [Trainable Weka Segmentation Fiji Plugin](https://imagej.net/plugins/tws/) combines a collection of machine learning algorithms with selected image features to produce segmentations. Other software options include:
+- [ilastik](https://www.ilastik.org/index.html)
+- [LabKit](https://imagej.net/plugins/labkit/)
+- [Paintera](https://github.com/saalfeldlab/paintera)
 
-Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad Bioimage Benchmark Collection (the same dataset was used in the (Measuring, Stitching and Batch Processing Worksheet)[MeasuringStitchingAndBatchProcessing/MeasuringStitichingAndBatchProcessing.md])
+Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad Bioimage Benchmark Collection (the same dataset was used in the [Measuring, Stitching and Batch Processing Worksheet](MeasuringStitchingAndBatchProcessing/MeasuringStitichingAndBatchProcessing.md))
 
 ### 📋 Step-by-Step Instructions
 
