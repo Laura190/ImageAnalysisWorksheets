@@ -10,7 +10,12 @@ There are different sections in the worksheet:
 
 Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
 
-Before starting the worksheet, download the associated Data folder from Moodle and follow the instructions below.
+Before starting the worksheet, download the associated Data folder from Moodle and start Fiji.
+
+# Learning Objectives:
+- How to quantitatively validate image analysis workflows
+- How machine learning can be used in image analysis
+- How to use the Trainable Weka Segmentation Plugin
 
 # Validation
 
@@ -32,11 +37,11 @@ $$ mean\ relative\ error = \frac{measured\ value - true\ value}{true\ value}$$
 
 ## 🔢 Comparison of cell count
 
-The number of cells in AS_09125_050118150001_A03f00d0.tif were counted manually by two different human observers. The first person counted 350 cells and the second person counted 362 cells in this image. The mean of the manual counts is 531.
+The number of cells in AS_09125_050118150001_A03f00d0.tif were counted manually by two different human observers. The first person counted 350 cells and the second person counted 362 cells in this image. The mean of the manual counts is 356.
 
 Automatically count the number of cells in AS_09125_050118150001_A03f00d0.tif using the ```Find Maxima...``` tool. Calculate the mean relative error between the count from ```Find Maxima...``` (measured value) and the mean manual count (true value).
 
-The image and manual counts are from BBBC01.
+The image and manual counts are from (BBBC001)[https://bbbc.broadinstitute.org/BBBC001].
 
 # Validation of Classification Problem
 
@@ -112,7 +117,7 @@ Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad
 - In the setting menu of the Weka plugin, you can select or deselect different "Training features". How does removing or adding a training feature change the results when you retrain the model? If you can't find these settings please ask. For more information about each feature, visit the Plugin webpage
 - When you are happy with the result, click Apply classifier and select a different image from the data set. Does the classifier work well for this image too?
 
-You can train on multiple images:
+You can also train on multiple images:
 
 ### 📋 Step-by-Step Instructions
 
@@ -133,5 +138,3 @@ You can train on multiple images:
 ## 💾 Save your progress
 
 If you haven't already, remember to save your the output from the Macro Recorder so you have a record of what you have done.
-
-# Please complete the learning objective survey
