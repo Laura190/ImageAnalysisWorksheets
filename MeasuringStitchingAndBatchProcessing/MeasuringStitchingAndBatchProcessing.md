@@ -87,7 +87,7 @@ The **ROI (region of interest) manager** is used to store and measure selections
 
 # Stitching
 
-Uncredited image in this section are from [Dave Mason's image analysis course](https://bitbucket.org/davemason/imageanalysiswithfiji/src/master/).
+Uncredited images in this section are from [Dave Mason's image analysis course](https://bitbucket.org/davemason/imageanalysiswithfiji/src/master/).
 
 Increasing the spatial resolution when imaging almost always leads to a reduced field of view. A common areas for this are histology and astronomy. The image below is made up of 690 individual frames taken with the CEERS Near Infrared Camera (NIRCam). There are more details and high resolution images in the [CEERS webpage](https://ceers.github.io/ceers-first-images-release.html).
 
