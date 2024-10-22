@@ -92,6 +92,25 @@ Aim to use the minimum threshold that prevents the noise from being detected.
 | 2      | Wait for the tracking to complete, the proceed | Wait until ```Tracking done in...``` appears near the bottom of the window, then Click ```Next``` |
 | 3      | Use the default ```Set filters on tracks``` settings | Click ```Next``` |
 
+### 🤔 Investigate
+- Can you change the colour of the spots based on the maximum intensity?
+- Can you change the colour of the tracks to show track displacement? Which particle is displaced the most? 
+- Can you adjust the settings to only show part of the track? Which do you think is the best way to display the tracks?
+- [TrackMate measures]((https://imagej.net/plugins/trackmate/analyzers/)) properties of the spots and tracks. Can you save the spots and tracks results to .csv files?
+- Can you use the TrackScheme to remove a track? Looking at the [TrackScheme documentation](https://imagej.net/plugins/trackmate/views/trackscheme) will help.
+
+### 📋 Step-by-Step Instructions
+
+| Step | Action | Details |
+|--------|-----------|------------|
+| 1      | Proceed when you are happy with your parameters for displaying the tracks | Click ```Next``` |
+| 2      | Plot the mean intensity of the spots against time. | From the ```Features for X axis``` drop down, select T. From the ```Features for Y axis``` drop down, select Mean intensity ch1. Click ```Plot features```. |
+| 3      | Process when you are happy with your plots | Click ```Next``` |
+| 4      | Create a video of the tracks | Select ```Capture overlay``` option from the drop down menu and then click ```Execute```. Click ```OK``` to keep the default options. Save the resulting image stack. |
+
+## Tracking Accuracy
+
+Tracking algorithms will always give a result, so how do you know if it's accurate. The [accuracy of different TrackMate algorithms](https://imagej.net/plugins/trackmate/trackers/accuracy) for tracking different objects in different environments is discussed is the documentation. For the best results make sure the inter-particle distance is greater than the frame-to-frame movement. If not, try to increase resolution (more pixels) or decrease interval (more frames). Look at your output carefully and make sure you're not getting 'jumps' where one particle is linked to another incorrectly. Unless you have problems with noise, blinking, focal shifts and similar, do not introduce gap closing as this may lead to false-linkages. The ```Simple LAP tracker``` does not include merge/spliting events, however TrackMate also has the more complex ```LAP Tracker``` which can handle merging and splitting events. TrackMate also has [other trackers](https://imagej.net/plugins/trackmate/trackers/index) available so you can choose the one most accurate for your system.
 
 # Built-in Functions
 
