@@ -1,3 +1,17 @@
+# Preparation
+
+This worksheet is not assessed. Please work through it at your own pace. You may work on your own, with a partner or in a small group.
+
+There are different sections in the worksheet:
+- Sections of text to provide context
+- **📋 Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
+- **🤔 Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
+- **🔧 Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
+
+Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
+
+Before starting the worksheet, download the associated [Data folder](https://moodle.warwick.ac.uk/mod/resource/view.php?id=2629717) from Moodle and follow the instructions below.
+
 # Tracking
 
 Uncredited image in this section are from [Dave Mason's image analysis course](https://bitbucket.org/davemason/imageanalysiswithfiji/src/master/).
@@ -110,7 +124,7 @@ Aim to use the minimum threshold that prevents the noise from being detected.
 
 ## 🎯 Tracking Accuracy
 
-Tracking algorithms will always give a result, so how do you know if it's accurate. The [accuracy of different TrackMate algorithms](https://imagej.net/plugins/trackmate/trackers/accuracy) for tracking different objects in different environments is discussed is the documentation. For the best results make sure the inter-particle distance is greater than the frame-to-frame movement. If not, try to increase resolution (more pixels) or decrease interval (more frames). Look at your output carefully and make sure you're not getting 'jumps' where one particle is linked to another incorrectly. Unless you have problems with noise, blinking, focal shifts and similar, do not introduce gap closing as this may lead to false-linkages. The ```Simple LAP tracker``` does not include merge/spliting events, however TrackMate also has the more complex ```LAP Tracker``` which can handle merging and splitting events. TrackMate also has [other trackers](https://imagej.net/plugins/trackmate/trackers/index) available so you can choose the one most suitable for your system.
+Tracking algorithms will always give a result, so how do you know if it's accurate? The [accuracy of different TrackMate algorithms](https://imagej.net/plugins/trackmate/trackers/accuracy) for tracking different objects in different environments is discussed in the documentation. For the best results make sure the inter-particle distance is greater than the frame-to-frame movement or try to increase resolution (more pixels) or decrease interval (more frames). Look at your output carefully and make sure you're not getting 'jumps' where one particle is linked to another incorrectly. Unless you have problems with noise, blinking, focal shifts and similar, do not introduce gap closing as this may lead to false-linkages. The ```Simple LAP tracker``` does not include merge/spliting events, however TrackMate also has the more complex ```LAP Tracker``` which can handle merging and splitting events. TrackMate also has [other trackers](https://imagej.net/plugins/trackmate/trackers/index) available so you can choose the one most suitable for your system.
 
 Close all open Fiji windows before starting the next section.
 
@@ -160,3 +174,7 @@ Fiji is not designed to create graphs. It can sometimes be useful to make basic 
 ### 🔧 Apply your skills
 
 Open or import any of the .csv files from the previous task in your favourite plotting software and create a plot of the mean intensity of the spots over time.
+
+## 🔧 Apply your skills
+- Use TrackMate to track the particles in ```File > Open Samples > Tracks for TrackMate```. Use the ```Simple LAP Tracker``` first and then try the ```LAP Tracker``` to capture the splits and merges. You may find the [TrackMate tutorial](https://imagej.net/plugins/trackmate/tutorials/getting-started) helpful.
+- Unzip nuclei_embryo.zip. This contains a substack of a dataset showing a C.elegans developing embryo from the [Cell Tracking Challenge](https://celltrackingchallenge.net/3d-datasets/). Use TrackMate to track the nuclei. Can you get an accurate result? More information about the dataset can be found in the [related paper](https://www.nature.com/articles/nmeth.1228).
