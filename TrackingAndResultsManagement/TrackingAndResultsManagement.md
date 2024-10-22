@@ -8,7 +8,7 @@ Life exists in the four dimensions. Tracking allows you to correlate spatial and
 
 Tracking has two parts: Feature Identification and Feature Linking.
 
-## Feature Identification
+## 🔍 Feature Identification
 
 <img src="tracks_03.png" alt="A series of image showing individual timepoints. The particles in each image are highlighted by purple circles in slightly different positions" width="800"/>
 
@@ -18,7 +18,7 @@ The position of particles can be determined with subpixel precision. One method 
 
 <img src="tracks_05.png" alt="A graph with pixels on the x axis and intensity on the y axis. The data points plotted are fitted to a Gaussian, the peak of which shows the position of the peak to lie between two integer pixel values" width="400"/>
 
-## Feature Linkage
+## 🔗 Feature Linkage
 
 For each feature, all possible links in the next frame are calculated. This includes the spot disappearing completely. A **cost matrix** is formed to compare the cost of each linkage. A cost matrix is a two-dimensional array that represents the cost of the particle moving from one position to another. This is globally optimised to calculate the lowest cost for all linkages.
 
@@ -46,7 +46,7 @@ This can allow for a more accurate linkage especially in crowded environments or
 
 If you're interested in how the dataset was made see [this snippet](https://bitbucket.org/snippets/davemason/Ke9zz7).
 
-## TrackMate
+## 🏃‍♂️ TrackMate
 
 [TrackMate](https://imagej.net/plugins/trackmate/) is distributed in Fiji and has a user-friendly interface for performing tracking, data visualization and track analysis. In this example, only a few of the capabilities of TrackMate are used. Please read the documentation to learn more about how TrackMate can be used.
 
@@ -108,7 +108,7 @@ Aim to use the minimum threshold that prevents the noise from being detected.
 | 3      | Process when you are happy with your plots | Click ```Next``` |
 | 4      | Create a video of the tracks | Select ```Capture overlay``` option from the drop down menu and then click ```Execute```. Click ```OK``` to keep the default options. Save the resulting image stack. |
 
-## Tracking Accuracy
+## 🎯 Tracking Accuracy
 
 Tracking algorithms will always give a result, so how do you know if it's accurate. The [accuracy of different TrackMate algorithms](https://imagej.net/plugins/trackmate/trackers/accuracy) for tracking different objects in different environments is discussed is the documentation. For the best results make sure the inter-particle distance is greater than the frame-to-frame movement. If not, try to increase resolution (more pixels) or decrease interval (more frames). Look at your output carefully and make sure you're not getting 'jumps' where one particle is linked to another incorrectly. Unless you have problems with noise, blinking, focal shifts and similar, do not introduce gap closing as this may lead to false-linkages. The ```Simple LAP tracker``` does not include merge/spliting events, however TrackMate also has the more complex ```LAP Tracker``` which can handle merging and splitting events. TrackMate also has [other trackers](https://imagej.net/plugins/trackmate/trackers/index) available so you can choose the one most suitable for your system.
 
@@ -122,11 +122,9 @@ Close all open Fiji windows before starting the next section.
 
 # Results Management
 
-## Results windows
+## 📊 Result and Table windows
 
 You can only have one active results window at a time. This must be named "Results". Other results windows should be renamed. You can use IJ.renameResults to do this. To make a renamed results window active again, rename the previously active window something else and rename the original window "Results" again. Any other open windows displaying results or data are known as Tables.
-
-## Built-in Functions
 
 There are some useful Built-in Functions for managing results in Fiji:
 
@@ -155,7 +153,7 @@ Most of the Table functions will also work for results windows. If you have mult
 - Can you write a new macro that extracts the time, mean intensity and standard deviation of the intensity to a new table for track 4 only?
 - Can you write a macro that creates a new table containing 4 columns: time, mean intensity plus one standard deviation, mean intensity and mean intensity minus one standard deviation? Can you also save the new table to a separate .csv file? 
 
-## Graphs
+## 📈 Graphs
 
 Fiji is not designed to create graphs. It can sometimes be useful to make basic plots in Fiji to check your image analysis pipeline is working as expected or to check initial results. However, to create graphs where you have more control over the appearance and that are suitable for publication, you will need to export your results to another programme (e.g. excel, python, matlab, R, ...). The majority of these programmes will accept a .csv file as an input. You can export the data in the results and table windows as .csv files. In a script you can use ```saveAs(format, path)```.
 
