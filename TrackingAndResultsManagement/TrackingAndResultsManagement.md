@@ -16,9 +16,9 @@ Before starting the worksheet, download the associated [Data folder](https://moo
 
 Uncredited image in this section are from [Dave Mason's image analysis course](https://bitbucket.org/davemason/imageanalysiswithfiji/src/master/).
 
-Life exists in the four dimensions. Tracking allows you to correlate spatial and temporal properties. Most particles look the same! Without any way to identify them, tracking is probabilistic. In the image below, the particles on the left look as if they are moving from left to right. However, if we consider that the two particles are different, e.g. an x fighter and a TIE fighter, it's possible that the upper and lower particles swap position. However, we wouldn't know as they look the same!
+Life exists in the four dimensions. Tracking allows you to correlate spatial and temporal properties. Most particles look the same! Without any way to identify them, tracking is probabilistic. In the image below, the particles on the left look as if they are moving from left to right. However, if we consider that the two particles are different, e.g. an X fighter and a TIE fighter, it's possible that the upper and lower particles swap position. However, we wouldn't know as they look the same!
 
-<img src="particle_starships.png" alt="two particles in different positions at 4 time points represented by x fighter and a TIE fighter spaceships. Demonstrates that particles can look the same so it's possible they don't track as expected." width="800"/>
+<img src="particle_starships.png" alt="two particles in different positions at 4 time points represented by X fighter and a TIE fighter spaceships. Demonstrates that particles can look the same so it's possible they don't track as expected." width="800"/>
 
 Tracking has two parts: Feature Identification and Feature Linking.
 
