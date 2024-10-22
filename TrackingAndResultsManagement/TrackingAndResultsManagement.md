@@ -96,7 +96,7 @@ Aim to use the minimum threshold that prevents the noise from being detected.
 - Can you change the colour of the spots based on the maximum intensity?
 - Can you change the colour of the tracks to show track displacement? Which particle is displaced the most? 
 - Can you adjust the settings to only show part of the track? Which do you think is the best way to display the tracks?
-- [TrackMate measures]((https://imagej.net/plugins/trackmate/analyzers/)) properties of the spots and tracks. Can you save the spots and tracks results to .csv files?
+- [TrackMate measures]((https://imagej.net/plugins/trackmate/analyzers/)) properties of the spots and tracks. Can you save the spots and tracks results to .csv (comma separated value) files?
 - Can you use the TrackScheme to remove a track? Looking at the [TrackScheme documentation](https://imagej.net/plugins/trackmate/views/trackscheme) will help.
 
 ### 📋 Step-by-Step Instructions
@@ -114,7 +114,7 @@ Tracking algorithms will always give a result, so how do you know if it's accura
 
 Close all open Fiji windows before starting the next section.
 
-## Apply your skills
+## 🔧 Apply your skills
 
 Use TrackMate to track the particles in ```File > Open Samples > Tracks for TrackMate```. Use the ```Simple LAP Tracker``` first and then try the ```LAP Tracker``` to capture the merge and splitting events. You may find the [TrackMate Getting Started Tutorial](https://imagej.net/plugins/trackmate/tutorials/getting-started) helpful.
 
@@ -130,19 +130,35 @@ You can only have one active results window at a time. This must be named "Resul
 
 There are some useful Built-in Functions for managing results in Fiji:
 
-- getStatistics()
-- getResult("Column", row)
-- setResult("Column", row, value) and updateResults()
-- nResults or getValue("results.count")
+- ```getResult("Column", row)```
+- ```setResult("Column", row, value)``` and ```updateResults()```
+- ```nResults``` or ```getValue("results.count")```
 
-If you are using a Table instead:
+If you are using a table instead, you can use the [Table functions](https://wsr.imagej.net/developer/macro/functions.html#T):
+- ```Table.get("Column", row)```
+- ```Table.set("Column", row, value)``` and ```Table.update```
+- ```Table.size```
 
+Most of the Table functions will also work for results windows. If you have multiple tables open, you can include the title of the table in the command as the last input argument, e.g. ```Table.get("Column", row, "title")```, to direct the command to the correct table.
 
-# Graphs
+### 📋 Step-by-Step Instructions
 
-Fiji is not designed to create graphs
-You will need to export your results to another programme (e.g. excel, python, matlab, ...)
-saveAs(format, path)
-Export the results as a .csv (comma separated value) file
+| Step | Action | Details |
+|--------|-----------|------------|
+| 1      | Open the spots .csv file from the previous task in Fiji | Click and drag the file into the main Fiji window or use ```File > open``` |
+| 2      | Open the subtable.ijm macro  | Click and drag the file in to the main Fiji window or use ```File > open``` |
+| 3      | Run the macro | Click ```Run``` in the Script Editor Window |
 
-Open the spots .csv from the previous task in your favourite plotting software.
+### 🤔 Investigate
+- What does the subtable.ijm macro do?
+- Can you adapt the macro to also move the standard deviation of the intensity to the new table.
+- Can you write a new macro that extracts the time, mean intensity and standard deviation of the intensity to a new table for track 4 only?
+- Can you write a macro that creates a new table containing 4 columns: time, mean intensity plus one standard deviation, mean intensity and mean intensity minus one standard deviation? Can you also save the new table to a separate .csv file? 
+
+## Graphs
+
+Fiji is not designed to create graphs. It can sometimes be useful to make basic plots in Fiji to check your image analysis pipeline is working as expected or to check initial results. However, to create graphs where you have more control over the appearance and that are suitable for publication, you will need to export your results to another programme (e.g. excel, python, matlab, R, ...). The majority of these programmes will accept a .csv file as an input. You can export the data in the results and table windows as .csv files. In a script you can use ```saveAs(format, path)```.
+
+### 🔧 Apply your skills
+
+Open or import any of the .csv files from the previous task in your favourite plotting software and create a plot of the mean intensity of the spots over time.
