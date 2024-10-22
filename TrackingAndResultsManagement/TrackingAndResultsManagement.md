@@ -110,9 +110,23 @@ Aim to use the minimum threshold that prevents the noise from being detected.
 
 ## Tracking Accuracy
 
-Tracking algorithms will always give a result, so how do you know if it's accurate. The [accuracy of different TrackMate algorithms](https://imagej.net/plugins/trackmate/trackers/accuracy) for tracking different objects in different environments is discussed is the documentation. For the best results make sure the inter-particle distance is greater than the frame-to-frame movement. If not, try to increase resolution (more pixels) or decrease interval (more frames). Look at your output carefully and make sure you're not getting 'jumps' where one particle is linked to another incorrectly. Unless you have problems with noise, blinking, focal shifts and similar, do not introduce gap closing as this may lead to false-linkages. The ```Simple LAP tracker``` does not include merge/spliting events, however TrackMate also has the more complex ```LAP Tracker``` which can handle merging and splitting events. TrackMate also has [other trackers](https://imagej.net/plugins/trackmate/trackers/index) available so you can choose the one most accurate for your system.
+Tracking algorithms will always give a result, so how do you know if it's accurate. The [accuracy of different TrackMate algorithms](https://imagej.net/plugins/trackmate/trackers/accuracy) for tracking different objects in different environments is discussed is the documentation. For the best results make sure the inter-particle distance is greater than the frame-to-frame movement. If not, try to increase resolution (more pixels) or decrease interval (more frames). Look at your output carefully and make sure you're not getting 'jumps' where one particle is linked to another incorrectly. Unless you have problems with noise, blinking, focal shifts and similar, do not introduce gap closing as this may lead to false-linkages. The ```Simple LAP tracker``` does not include merge/spliting events, however TrackMate also has the more complex ```LAP Tracker``` which can handle merging and splitting events. TrackMate also has [other trackers](https://imagej.net/plugins/trackmate/trackers/index) available so you can choose the one most suitable for your system.
 
-# Built-in Functions
+Close all open Fiji windows before starting the next section.
+
+## Apply your skills
+
+Use TrackMate to track the particles in ```File > Open Samples > Tracks for TrackMate```. Use the ```Simple LAP Tracker``` first and then try the ```LAP Tracker``` to capture the merge and splitting events. You may find the [TrackMate Getting Started Tutorial](https://imagej.net/plugins/trackmate/tutorials/getting-started) helpful.
+
+Close all open Fiji windows before starting the next section.
+
+# Results Management
+
+## Results windows
+
+You can only have one active results window at a time. This must be named "Results". Other results windows should be renamed. You can use IJ.renameResults to do this. To make a renamed results window active again, rename the previously active window something else and rename the original window "Results" again. Any other open windows displaying results or data are known as Tables.
+
+## Built-in Functions
 
 There are some useful Built-in Functions for managing results in Fiji:
 
@@ -121,11 +135,8 @@ There are some useful Built-in Functions for managing results in Fiji:
 - setResult("Column", row, value) and updateResults()
 - nResults or getValue("results.count")
 
-# Results windows
+If you are using a Table instead:
 
-You can only have one active results window at a time. This must be named "Results".
-Other results windows should be renamed. You can use IJ.renameResults to do this.
-To make a renamed results window active again, rename the previously active window something else and rename the original window "Results" again.
 
 # Graphs
 
@@ -134,16 +145,4 @@ You will need to export your results to another programme (e.g. excel, python, m
 saveAs(format, path)
 Export the results as a .csv (comma separated value) file
 
-
-# Results windows
-
-You can only have one active results window at a time. This must be named "Results".
-Other results windows should be renamed. You can use IJ.renameResults to do this.
-To make a renamed results window active again, rename the previously active window something else and rename the original window "Results" again.
-
-# Graphs
-
-Fiji is not designed to create graphs
-You will need to export your results to another programme (e.g. excel, python, matlab, ...)
-saveAs(format, path)
-Export the results as a .csv (comma separated value) file
+Open the spots .csv from the previous task in your favourite plotting software.
