@@ -134,7 +134,7 @@ You can also train on multiple images:
 ### 🤔 Investigate
 - Does training on another image improve the results?
 - Can you apply the classifier to all the images in the BBBC008_partial folder?
-- 
+ 
 ## 💾 Save your progress
 
 If you haven't already, remember to save your the output from the Macro Recorder so you have a record of what you have done.
