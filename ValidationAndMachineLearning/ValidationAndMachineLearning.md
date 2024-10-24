@@ -87,7 +87,7 @@ Machine learning is a branch of artificial intelligence that trains algorithms b
 
 Machine learning algorithms are designed to find patterns in data. **Training** (supervised learning) takes a set of input data and it's known outputs and trains a model to predict the output for new data. Machine learning can be used to train classfication models, which separate input data into categories. It can also be used for denoising, isotropic reconstruction and surface projections (See [CSBDeep](https://csbdeep.bioimagecomputing.com/) for examples). Training a model can be very time consuming, it can require a lot of user input and computing time. Using a Graphical Processing Unit (GPU) rather than the Central Processing Unit (CPU) can speed up the processing time.
 
-## Machine Learning for Pixel Classification
+## 🦾 Machine Learning for Pixel Classification
 
 The [Trainable Weka Segmentation Fiji Plugin](https://imagej.net/plugins/tws/) combines a collection of machine learning algorithms with selected image features to produce segmentations. Other software options include:
 - [ilastik](https://www.ilastik.org/index.html)
