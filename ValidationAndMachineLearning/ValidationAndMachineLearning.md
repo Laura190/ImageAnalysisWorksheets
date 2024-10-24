@@ -33,7 +33,7 @@ Aim: Estimate a scalar or vector quantity
 
 Method: Calculate the mean relative error
 
-<img src="mean_relative_error.png" alt="\text(mean\ relative\ error) = \frac{\text(measured\ value) - \text(true\ value)}{\text(true\ value)}" width="300"/>
+<img src="mean_relative_error.png" alt="\text(mean\ relative\ error) = \frac{\text(measured\ value) - \text(true\ value)}{\text(true\ value)}" width="350"/>
 
 ## 🔢 Comparison of cell count
 
