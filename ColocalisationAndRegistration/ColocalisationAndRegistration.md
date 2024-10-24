@@ -91,3 +91,35 @@ Manders' Overlap Coefficient is the ratio of the summed intensities of pixels fr
 Use BIOP JACoP to investigate the colocalisation of the three channels in ```File > Open Samples > Fluorescent Cells```.
 
 # Registration
+
+Image registration is the process of aligning two or more images of the same scene taken at different times or by different microscopes. In some cases, even when imaging a fixed sample of the same microscope there can be misalignment between the different fluorescence channels. Fixing this issue is crucial for subsequent analysis such as colocalisation. Image registration can be used to align images from different imaging modalities, correct for sample drift during imaging or to remove sample movement so that internal dynamic processes can be studied.
+
+For this worksheet we will use [StackReg](https://bigwww.epfl.ch/thevenaz/stackreg/) from  [EPFL’s Biomedical Imaging Group (BIG)](https://bigwww.epfl.ch/).
+
+### 📋 Step-by-Step Instructions
+
+| Step | Action | Details |
+|--------|-----------|------------|
+| 1      | Open Fiji's Updater  | Navigate to ```Help > Update...``` |
+| 2      | Open the list of update sites | Click ```Manage Update Sites``` |
+| 3      | Add the BIG-EPFL update site | In the search bar at the top enter ```BIG```. Click the check box next to BIG-EPFL that will appear in the list below. Click ```Apply and Close``` |
+| 4      | Apply the changes | Click ```Apply Changes``` and wait for the download to complete. Click ```OK``` when the "Updates successfully" message appears  |
+| 5      | Restart Fiji | Close Fiji and open it again |
+| 6      | Check the plugin has been installed | Open the Plugins menu and check that ```StackReg``` is listed. |
+
+The BIG-EPFL update site contains more than just the StackReg plugin, however this is the only one we will use for this course.
+
+### 📋 Step-by-Step Instructions
+
+| Step | Action | Details |
+|--------|-----------|------------|
+| 1      | Open ```Katies-chicken-cell-infected-with-virus-t50.tif``` in Fiji  | Click and drag the ```Katies-chicken-cell-infected-with-virus-t50.tif``` file in to the main window of Fiji or open it using `File > Open...` |
+| 2      | Play the movie to see how the position of the nucleus changes | Click the ▶️ arrow in the lower left hand corner of the image window. |
+| 3      | Look at the maximum projection over time to see how the position of the nucleus changed | Navigate to ```Image > Stacks > Z Project...``` and select ```Max Intensity``` for the ```Projection type``` |
+| 4      | Duplicate the time series | Select the ```Katies-chicken-cell-infected-with-virus-t50.tif``` image window. Use  ```Image > Duplicate...``` or ```ctrl+shift+d```. Ensure the ```Duplicate stack``` option is selected. |
+| 5      | Use ```StackReg``` to register the image | Navigate to ```Plugins > StackReg```. Select ```Rigid Body``` from the ```Transformation``` drop down. Click ```OK```. Wait for Fiji to finish processing the stack |
+| 6      | Maximum project the registered stack to compare the results | Navigate to ```Image > Stacks > Z Project...``` and select ```Max Intensity``` for the ```Projection type``` |
+
+### 🤔 Investigate
+- StackReg has 4 different transforms: Translation, Rigid Body, Scaled Rotation and Affine. Read the [StackReg](https://bigwww.epfl.ch/thevenaz/stackreg/) or ask for favourite chat bot ([Bioimage.io Chat](https://bioimage.io/chat/)) to understand what each of them do. Try out the different transforms. Which do you think is most appropriate for registering ```Katies-chicken-cell-infected-with-virus-t50.tif```? 
+- In the ```Plugins > Registration``` menu in Fiji there are more plugins designed for registering images. Experiment with a couple of them to see how they compare to StackReg. Look online for relevant documentation to understand what they can do.
