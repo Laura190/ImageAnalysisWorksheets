@@ -33,7 +33,7 @@ Aim: Estimate a scalar or vector quantity
 
 Method: Calculate the mean relative error
 
-$$ mean\ relative\ error = \frac{measured\ value - true\ value}{true\ value}$$
+$$mean\ relative\ error = \frac{measured\ value - true\ value}{true\ value}$$
 
 ## 🔢 Comparison of cell count
 
@@ -49,11 +49,11 @@ Aim: Decide if something is present in an image
 
 Method: Calculate the sensitivity and specificity
 
-$$ Sensitivity = \frac{True\ Positives}{True\ Positives + False\ Negatives}$$
+$$Sensitivity = \frac{True\ Positives}{True\ Positives + False\ Negatives}$$
 
 The fraction of present things that are correctly detected, 0 none detected to 1 all detected
 
-$$ Specificity = \frac{True\ Negatives}{True\ Negatives + False\ Positives}$$
+$$Specificity = \frac{True\ Negatives}{True\ Negatives + False\ Positives}$$
 
 The fraction of correct detection when the thing is not present, 0 all falsely detected to 1 none falsely detected
 
@@ -69,7 +69,7 @@ Aim: Estimate the boundary regions of an image
 
 Method: Calculate the difference between the segmented and ground truth boundaries
 
-$$ root\ mean\ square\ error = \sqrt{\frac{\sum^N_{i=1}\left(\mathbf{x^s_i}-\mathbf{x^g_i}\right)^2}{{N}}} $$
+$$root\ mean\ square\ error = \sqrt{\frac{\sum^N_{i=1}\left(\mathbf{x^s_i}-\mathbf{x^g_i}\right)^2}{{N}}}$$
 
 where $N$ is the number of points, $x^s_i$ are the points that make up the segmented boundary and $x^g_i$ are the points that make up the ground truth boundary. This is to calculate the root mean square error, but other metrics can also be used, e.g. Hausdorff distance
 
@@ -90,9 +90,10 @@ Machine learning algorithms are designed to find patterns in data. **Training** 
 ## 🦾 Machine Learning for Pixel Classification
 
 The [Trainable Weka Segmentation Fiji Plugin](https://imagej.net/plugins/tws/) combines a collection of machine learning algorithms with selected image features to produce segmentations. Other software options include:
-- [ilastik](https://www.ilastik.org/index.html)
-- [LabKit](https://imagej.net/plugins/labkit/)
-- [Paintera](https://github.com/saalfeldlab/paintera)
+
+- [LabKit](https://imagej.net/plugins/labkit/), another Fiji Plugin
+- [ilastik](https://www.ilastik.org/index.html), python based software that can also do object classification and more
+- [Paintera](https://github.com/saalfeldlab/paintera), primarily focused on 3D neuron reconstruction from electron micrographs
 
 Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad Bioimage Benchmark Collection (the same dataset was used in the [Measuring, Stitching and Batch Processing Worksheet](MeasuringStitchingAndBatchProcessing/MeasuringStitichingAndBatchProcessing.md)).
 
@@ -102,7 +103,7 @@ Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad
 
 | Step | Action | Details |
 |--------|-----------|------------|
-| 1      | Open the Trainable Weka Segmentation Plugin in Fiji  | In Fiji, navigate to [Plugins > Segmentation > Trainable Weka Segmentation] |
+| 1      | Open the Trainable Weka Segmentation Plugin in Fiji  | In Fiji, navigate to ```Plugins > Segmentation > Trainable Weka Segmentation``` |
 | 2      | Open on the images from the subset of the BBBC008 data | Select one of the images for the BBB008_partial folder |
 | 3      | Draw a line in the background of the image | Click and drag on the dark region of the image |
 | 4      | Add the selection to class 1 | Click ```Add to class 1``` on the right |
@@ -114,7 +115,7 @@ Unzip the BBBC008_partial.zip folder. This is a subset of BBBC008 from the Broad
 
 ### 🤔 Investigate
 - Can you improve the results by adding more labels and retraining the classifier?
-- In the setting menu of the Weka plugin, you can select or deselect different "Training features". How does removing or adding a training feature change the results when you retrain the model? If you can't find these settings please ask. For more information about each feature, visit the Plugin webpage
+- In the setting menu of the Weka plugin, you can select or deselect different ```Training features```. How does removing or adding a training feature change the results when you retrain the model? If you can't find these settings please ask. For more information about each feature, visit the Plugin webpage
 - When you are happy with the result, click Apply classifier and select a different image from the data set. Does the classifier work well for this image too?
 
 You can also train on multiple images:
