@@ -126,7 +126,7 @@ You can also train on multiple images:
 |--------|-----------|------------|
 | 1      | Save the model | Click Save data and save the data.arff file |
 | 2      | Close all open Fiji windows | Close the Trainable Weka Segmentation Window and any other open image windows |
-| 3      | Start the Weka Plugin | [Plugins > Segmentation > Trainable Weka Segmentation] and select another image to open. |
+| 3      | Start the Weka Plugin | ```Plugins > Segmentation > Trainable Weka Segmentation``` and select another image to open. |
 | 4      | Load the previous model | Click and open the data.arff file |
 | 5      | Apply the classifier from the previous model | Click ```Train classifier``` |
 | 6      | Add the selection to class 2 | Click ```Add to class 2``` on the right |
