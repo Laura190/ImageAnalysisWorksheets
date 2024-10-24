@@ -178,3 +178,9 @@ Open or import any of the .csv files from the previous task in your favourite pl
 ## 🔧 Apply your skills
 - Use TrackMate to track the particles in ```File > Open Samples > Tracks for TrackMate```. Use the ```Simple LAP Tracker``` first and then try the ```LAP Tracker``` to capture the splits and merges. You may find the [TrackMate tutorial](https://imagej.net/plugins/trackmate/tutorials/getting-started) helpful.
 - Unzip nuclei_embryo.zip. This contains a substack of a dataset showing a C.elegans developing embryo from the [Cell Tracking Challenge](https://celltrackingchallenge.net/3d-datasets/). Use TrackMate to track the nuclei. Can you get an accurate result? More information about the dataset can be found in the [related paper](https://www.nature.com/articles/nmeth.1228).
+
+# References
+
+Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832. [doi:10.1038/s41592-022-01507-1](https://doi.org/10.1038/s41592-022-01507-1)
+
+Tinevez, J.-Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Laplantine, E., … Eliceiri, K. W. (2017). TrackMate: An open and extensible platform for single-particle tracking. Methods, 115, 80–90. [doi:10.1016/j.ymeth.2016.09.016](https://doi.org/10.1016/j.ymeth.2016.09.016)
