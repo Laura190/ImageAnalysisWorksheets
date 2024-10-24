@@ -42,7 +42,7 @@ To quantify the colocalisation in an image different coefficients can be used. C
 | 5      | Restart Fiji | Close Fiji and open it again |
 | 6      | Check the plugin has been installed | Open the Plugins menu and check that ```BIOP``` is listed. |
 
-The BIOP update site contains more than just the JACoP plugin, however this is the only one we will use for this worksheet.
+The BIOP update site contains more than just the JACoP plugin, however this is the only one we will use for this course.
 
 ## Pearson's correlation coefficient
 
@@ -61,12 +61,33 @@ The Pearson's correlation coefficient works well for complete colocalisation or 
 
 | Step | Action | Details |
 |--------|-----------|------------|
-| 1      | Open coloc.tif in Fiji  | Click and drag the coloc.tif file in to the main window of Fiji or open it using `File > Open...` |
-| 2      | Compare the channels to see which have areas that overlap | Open the channels tool ```Image > Color > Channels Tool...```. Uncheck the boxes to hide the respective channel. Check two boxes at a time to see how each pair overlap. |
+| 1      | Start the BIOP JACoP plugin  | Navigate to ```Plugins > BIOP > Image Analysis > BIOP JACoP``` |
+| 2      | Set suitable parameters to compare the first two channels | Select the settings shown in the image <br> <img src="coloc_settings1.png" alt="Colocaliation windows showing Channel A is 1 Channel B is 2. Thresholds are Otsu and Pearson's is checked" width="450"/> |
+
+### 🤔 Investigate
+- What output's do you get from running the plugin? There should be three output windows: Results, Log and an image. What information do you get from each?
+- What is Pearson's correlation coefficient for different pairs of images?
+- Do the values returned by the plugin meet your expectations for which channels you thought would colocalise?
 
 ## Manders' Overlap Coefficient
 
 Manders' Overlap Coefficient is the ratio of the summed intensities of pixels from one channel for which the intensity in the second channel is above zero to the total intensity in the first channel. It removes some of the intensity dependence of Pearson's and provides channel-specific overlap coefficients (M1 and M2). The values of Manders' Overlap Coefficient range from from 0, no overlap, to 1, complete overlap.
 
+### 📋 Step-by-Step Instructions
+
+| Step | Action | Details |
+|--------|-----------|------------|
+| 1      | Start the BIOP JACoP plugin  | Navigate to ```Plugins > BIOP > Image Analysis > BIOP JACoP``` |
+| 2      | Set suitable parameters to compare the first two channels | Select the settings shown in the image <br> <img src="coloc_settings2.png" alt="Colocaliation windows showing Channel A is 1 Channel B is 2. Thresholds are Otsu and Pearson's is checked" width="450"/> |
+
+### 🤔 Investigate
+- What output's do you get from running the plugin? There should be three output windows: Results, Log and an image. What information do you get from each?
+- What are the M1 and M2 coefficient for different pairs of images?
+- Do the values returned by the plugin meet your expectations for which channels you thought would colocalise?
+- BIOP JACoP lists a number of other coefficients and options, what are they and what do they do?
+
+## 🔧 Apply your skills
+
+Use BIOP JACoP to investigate the colocalisation of the three channels in ```File > Open Samples > Fluorescent Cells```.
 
 # Registration
