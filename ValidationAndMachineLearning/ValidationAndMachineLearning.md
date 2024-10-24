@@ -33,7 +33,7 @@ Aim: Estimate a scalar or vector quantity
 
 Method: Calculate the mean relative error
 
-$$mean\ relative\ error = \frac{measured\ value - true\ value}{true\ value}$$
+<img src="mean_relative_error.png" alt="\text(mean\ relative\ error) = \frac{\text(measured\ value) - \text(true\ value)}{\text(true\ value)}" width="300"/>
 
 ## 🔢 Comparison of cell count
 
@@ -49,11 +49,11 @@ Aim: Decide if something is present in an image
 
 Method: Calculate the sensitivity and specificity
 
-$$Sensitivity = \frac{True\ Positives}{True\ Positives + False\ Negatives}$$
+<img src="sensitivity.png" alt="$$Sensitivity = \frac{True\ Positives}{True\ Positives + False\ Negatives}$$" width="300"/>
 
 The fraction of present things that are correctly detected, 0 none detected to 1 all detected
 
-$$Specificity = \frac{True\ Negatives}{True\ Negatives + False\ Positives}$$
+<img src="specificity.png" alt="$$Specificity = \frac{True\ Negatives}{True\ Negatives + False\ Positives}$$" width="300"/>
 
 The fraction of correct detection when the thing is not present, 0 all falsely detected to 1 none falsely detected
 
@@ -69,9 +69,9 @@ Aim: Estimate the boundary regions of an image
 
 Method: Calculate the difference between the segmented and ground truth boundaries
 
-$$root\ mean\ square\ error = \sqrt{\frac{\sum^N_{i=1}\left(\mathbf{x^s_i}-\mathbf{x^g_i}\right)^2}{{N}}}$$
+<img src="rmse.png" alt="$$root\ mean\ square\ error = \sqrt{\frac{\sum^N_{i=1}\left(\mathbf{x^s_i}-\mathbf{x^g_i}\right)^2}{{N}}}$$" width="300"/>
 
-where $N$ is the number of points, $x^s_i$ are the points that make up the segmented boundary and $x^g_i$ are the points that make up the ground truth boundary. This is to calculate the root mean square error, but other metrics can also be used, e.g. Hausdorff distance
+where N is the number of points, x<sup>s</sup><sub>i</sub> are the points that make up the segmented boundary and x<sup>g</sup><sub>i</sub> are the points that make up the ground truth boundary. This is to calculate the root mean square error, but other metrics can also be used, e.g. Hausdorff distance
 
 ## 🧩 Segment graphene grains
 
