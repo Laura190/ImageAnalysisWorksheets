@@ -15,7 +15,7 @@ However, if we consider the whole world, both the CAMDU office and Senate House 
 
 <img src="coloc_02b.png" alt="map of the globe with a yellow circle in the UK" width="400"/><br>
 
-If you plan to use colocalisation analysis for your research, it is important to learn more about colocalisation than what is covered in this worksheet as there are many pitfalls. The ImageJ documentation has a [page on colocalisation](https://imagej.net/imaging/colocalization-analysis) and a useful paper is by [Bolte and Cordelieres](https://doi.org/10.1111/j.1365-2818.2006.01706.x).
+If you plan to use colocalisation analysis for your research, it is important to learn more about colocalisation than what is covered in this worksheet as there are many pitfalls. The ImageJ documentation has a [page on colocalisation](https://imagej.net/imaging/colocalization-analysis) and a useful paper is by [Bolte and Cordelieres][def].
 
 ### 📋 Step-by-Step Instructions
 
@@ -128,4 +128,4 @@ The BIG-EPFL update site contains more than just the StackReg plugin, however th
 
 Bolte, S., & Cordelieres, F. P. (2006). A guided tour into subcellular colocalization analysis in light microscopy. Journal of Microscopy, 224(3), 213–232. [doi:10.1111/j.1365-2818.2006.01706.x](https://doi.org/10.1111/j.1365-2818.2006.01706.x)
 
-P. Thévenaz, U.E. Ruttimann, M. Unser, "A Pyramid Approach to Subpixel Registration Based on Intensity," IEEE Transactions on Image Processing, vol. 7, no. 1, pp. 27-41, January 1998. [doi:10.1109/83.650848](https://doi.org/10.1109/83.650848)
+P. Thévenaz, U.E. Ruttimann, M. Unser, "A Pyramid Approach to Subpixel Registration Based on Intensity," IEEE Transactions on Image Processing, vol. 7, no. 1, pp. 27-41, January 1998. [doi:10.1109/83.650848](https://doi.org/10.1109/83.650848) 
