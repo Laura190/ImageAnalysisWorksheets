@@ -10,9 +10,9 @@ See if you can find entries for:
 # Example Data
 
 Image repositories are a good place to find images for testing image analysis workflows. We have used some data from repositories in other worksheets. Here are a few others that are used for depositing published data:
-1) [Image Data Repository (IDR)](https://idr.openmicroscopy.org/)
-2) [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/galleries/galleries.html)
-3) [ProteomeXchange](https://proteomecentral.proteomexchange.org/ui)
+1) [Image Data Repository (IDR)](https://idr.openmicroscopy.org/) \
+2) [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/galleries/galleries.html) \
+3) [ProteomeXchange](https://proteomecentral.proteomexchange.org/ui) \
 4) [EMPIAR](https://www.ebi.ac.uk/empiar/)
 
 Choose one of the repositories and explore what type of data they accept.
