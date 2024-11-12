@@ -23,4 +23,6 @@ As you start developing more complicated workflows you may want to start using v
 
 # Making data FAIR
 
-When you are ready to publish your results, you will need to make data available to others. Ideally your data should fulfil the [FAIR principles](https://www.go-fair.org/fair-principles/). What does FAIR stand for?
+When you are ready to publish your results, you will need to make the data available to others. Ideally your data should fulfil the [FAIR principles](https://www.go-fair.org/fair-principles/). What does FAIR stand for? 
+
+There is a series of [RDMBites on Youtube](https://www.youtube.com/playlist?list=PLyCNTVs-UBvuJF7WausQ5q7v7pI1vEpI1) explaining more about what metadata is required to make bioimage data FAIR.

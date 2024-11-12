@@ -9,3 +9,4 @@ Worksheets for developing image analysis skills with [Fiji](https://imagej.net/s
 3. [Validation And Machine Learning](ValidationAndMachineLearning/ValidationAndMachineLearning.md)
 4. [Tracking and Results Management](TrackingAndResultsManagement/TrackingAndResultsManagement.md)
 5. [Colocalisation and Registration](ColocalisationAndRegistration/ColocalisationAndRegistration.md)
+6. [Further Resources](FurtherResources/FurtherResources.md)
