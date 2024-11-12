@@ -3,17 +3,17 @@
 A good starting point for finding new tools or finding more training materials is the [Bioimage Informatics Index](https://biii.eu/)
 
 See if you can find entries for:
-1) Training materials for 3D image analysis
-2) Other image analysis software e.g. QuPath or CellProfiler
-3) An ImageJ plugin for deconvolution
+- Training materials for 3D image analysis
+- Other image analysis software e.g. QuPath or CellProfiler
+- An ImageJ plugin for deconvolution
 
 # Example Data
 
 Image repositories are a good place to find images for testing image analysis workflows. We have used some data from repositories in other worksheets. Here are a few others that are used for depositing published data:
-1) [Image Data Repository (IDR)](https://idr.openmicroscopy.org/) \
-2) [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/galleries/galleries.html) \
-3) [ProteomeXchange](https://proteomecentral.proteomexchange.org/ui) \
-4) [EMPIAR](https://www.ebi.ac.uk/empiar/)
+- [Image Data Repository (IDR)](https://idr.openmicroscopy.org/)
+- [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/galleries/galleries.html)
+- [ProteomeXchange](https://proteomecentral.proteomexchange.org/ui)
+- [EMPIAR](https://www.ebi.ac.uk/empiar/)
 
 Choose one of the repositories and explore what type of data they accept.
 
