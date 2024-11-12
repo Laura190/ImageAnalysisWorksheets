@@ -1,3 +1,18 @@
+# Preparation
+
+This worksheet is not assessed. Please work through it at your own pace. You may work on your own, with a partner or in a small group.
+
+There are different sections in the worksheet:
+- Sections of text to provide context
+- **📋 Step-by-Step Instructions**: follow the steps, please ask if the steps are unclear or if you get stuck
+- **🤔 Investigate**: suggested things to think about to improve your understanding of image analysis techniques and Fiji tools. These ideas should help you get started, but don't be limited to only these suggestions. Be curious, ask your own questions and experiment with the tools.
+- **🔧 Apply Your skills**: A task is given without specific instructions. You should be able to attempt these tasks based on skills you have learnt on this or previous worksheets. Please ask if the task is unclear, something isn't working as you expect or you are unsure how to proceed. Also, you are welcome to design and solve your own task, we're happy to help even if it doesn't relate directly to the worksheets.
+
+Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
+
+Before starting the worksheet, download the associated [Data folder](https://moodle.warwick.ac.uk/mod/resource/view.php?id=2629717) from Moodle and follow the instructions below.
+
+
 # Colocalisation
 
 Uncredited image in this section are from [Dave Mason's image analysis course](https://bitbucket.org/davemason/imageanalysiswithfiji/src/master/).
@@ -15,7 +30,7 @@ However, if we consider the whole world, both the CAMDU office and Senate House 
 
 <img src="coloc_02b.png" alt="map of the globe with a yellow circle in the UK" width="400"/><br>
 
-If you plan to use colocalisation analysis for your research, it is important to learn more about colocalisation than what is covered in this worksheet as there are many pitfalls. The ImageJ documentation has a [page on colocalisation](https://imagej.net/imaging/colocalization-analysis) and a useful paper is by [Bolte and Cordelieres][def].
+If you plan to use colocalisation analysis for your research, it is important to learn more about colocalisation than what is covered in this worksheet as there are many pitfalls. The ImageJ documentation has a [page on colocalisation](https://imagej.net/imaging/colocalization-analysis) and a useful paper is by [Bolte and Cordelieres](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2006.01706.x).
 
 ### 📋 Step-by-Step Instructions
 
