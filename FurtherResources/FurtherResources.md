@@ -19,7 +19,7 @@ Choose one of the repositories and explore what type of data they accept.
 
 # Version Control
 
-As you start developing more complicated workflows you may want to start using version control software. [Git](https://git-scm.com/doc), version control software, and [Github](https://github.com/)(code repository) are commonly used for scientific software. You can sign up to [Github Education](https://github.com/education) to access additional tools and resources from Github.
+As you start developing more complicated workflows you may want to start using version control software. [Git](https://git-scm.com/doc), version control software, and [Github](https://github.com/), code repository, are commonly used for scientific software. You can sign up to [Github Education](https://github.com/education) to access additional tools and resources from Github.
 
 # Making data FAIR
 
