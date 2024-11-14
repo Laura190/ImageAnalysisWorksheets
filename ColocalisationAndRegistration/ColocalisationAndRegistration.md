@@ -62,8 +62,8 @@ The BIOP update site contains more than just the JACoP plugin, however this is t
 ## Pearson's correlation coefficient
 
 Pearson's correlation coefficient compares how two variable change together compared to how they change on their own. In the context of colocalisation it is used to compare if the intensity value of channels change together or not. The formula for Pearson's correlation coefficient is
-$$ \frac{n(\sum xy) - (\sum x)(\sum y)}{\sqrt{[n\sum x^2 - (\sum x)^2][n\sum y^2 - (\sum y)^2]}} $$
-where $n$ is the number of data points; $x$ and $y$ are the intensity values for two channels and $\sum$ denotes the summation. The numerator is the covariance between the intensity values in the two channels. This indicates how much the variables change together verses on their mean values. The denominator is the product of the variability in the intensity values of the two individual channels.
+<img src="Pearsons.png" alt="equation" width="400"/>
+where n is the number of data points; x and y are the intensity values for two channels and ∑ denotes the summation. The numerator is the covariance between the intensity values in the two channels. This indicates how much the variables change together verses on their mean values. The denominator is the product of the variability in the intensity values of the two individual channels.
 
 If the Pearson's correlation coefficient is close to:
 - +1: Positive correlation. As the intensity in one channel increases so does the intensity in the second channel.
