@@ -173,6 +173,7 @@ Particles of any size and shape are measured, which can introduce errors when me
 - Try out some of the different options in the `Show` drop down box to view the different outputs available.
 - Try out some of the different checkbox settings, do they change the results? Or produce different outputs?
 - Try using `Find Maxima` on the same image, do both methods count the same number of objects? Why or why not?
+  
 Please ask for help if you are unsure how to exclude objects from the `Analyze Particles` results or if you aren't sure how to use `Find Maxima`.
 
 ## 🏁 Binary operations
@@ -192,6 +193,7 @@ One tool that is helpful when segmenting round objects like nuclei or nanopartic
 - What is the difference between the binary operations erode and dilate? How do they affect the measurements?
 - What is the difference between the binary operations opening and closing? How do they affect the measurements?
 - What does `skeletonize` do? Can you think of a situation when you might use it?
+  
 Please ask for help if you are uncertain how to apply the watershed segmentation or are unclear what the binary operations do.
 
 ## 💾 Save your current progress
@@ -214,6 +216,7 @@ Try applying the skills you have learnt above to segment, count and measure the 
 - Threshold the nuclei to create a binary mask.
 - If necessary, apply functions to the binary mask to prepare it for connected component analysis.
 - Use connected component analysis to count and measure the individual nuclei.
+  
 You will need to test different methods and settings to find a workflow that counts the nuclei accurately.
 
 ## ✍️ Creating a Macro
