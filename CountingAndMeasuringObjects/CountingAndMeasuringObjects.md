@@ -213,7 +213,7 @@ This Macro file may not actually run or do anything useful, it is simply to keep
 Try applying the skills you have learnt above to segment, count and measure the nuclei in `nuclei.tif` Once the file has downloaded you can open it in Fiji either by clicking and dragging the file to the main Fiji window or using `File > Open...`. Make sure you have the Macro Recorder open to keep track of what you are doing. If you want to clear the Recorder before you start, close the window and open it again. The steps you should take are:
 - Threshold the nuclei to create a binary mask.
 - If necessary, apply functions to the binary mask to prepare it for connected component analysis.
-- Use connected component analysis to count the individual nuclei.
+- Use connected component analysis to count and measure the individual nuclei.
 You will need to test different methods and settings to find a workflow that counts the nuclei accurately.
 
 ## ✍️ Creating a Macro
