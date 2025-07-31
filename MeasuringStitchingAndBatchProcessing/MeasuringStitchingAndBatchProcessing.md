@@ -1,4 +1,4 @@
-# Preparation
+# Measuring, Stitching and Batch Processing
 
 This worksheet is not assessed. Please work through it at your own pace. You may work on your own, with a partner or in a small group.
 
@@ -11,6 +11,15 @@ There are different sections in the worksheet:
 Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
 
 Before starting the worksheet, download the associated [Data folder](https://github.com/Laura190/ImageAnalysisWorksheets/raw/refs/heads/main/MeasuringStitchingAndBatchProcessing/Data.zip?download=) and follow the instructions below.
+
+## 📁 Preparation
+
+### **Download the associated Data folder**
+**➡️ [Download the Data folder (ZIP)](https://github.com/Laura190/ImageAnalysisWorksheets/raw/main/MeasuringStitchingAndBatchProcessing/Data.zip)**
+
+Download the data before continuing:
+1. Click the link above to grab the ZIP archive.
+2. Unzip it and launch Fiji as described below.
 
 ### 📋 Step-by-Step Instructions
 
