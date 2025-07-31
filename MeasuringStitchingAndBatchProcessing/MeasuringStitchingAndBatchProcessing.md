@@ -10,8 +10,6 @@ There are different sections in the worksheet:
 
 Please don't skip the Investigate sections and just rush through the Step-by-Step Instructions! The Investigate sections will help you to develop your own image analysis skills. Please ask if anything is unclear, you are unsure about the purpose of anything you are doing or you can't work out how to do something.
 
-Before starting the worksheet, download the associated [Data folder](https://github.com/Laura190/ImageAnalysisWorksheets/raw/refs/heads/main/MeasuringStitchingAndBatchProcessing/Data.zip?download=) and follow the instructions below.
-
 ## 📁 Preparation
 
 ### **Download the associated Data folder**
