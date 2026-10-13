@@ -149,7 +149,15 @@ You can also train on multiple images:
 ### 🤔 Investigate
 - Does training on another image improve the results?
 - Can you apply the classifier to all the images in the BBBC008_partial folder?
- 
-## 💾 Save your progress
+
+## 🔧 Apply Your skills
+
+Measurement problem: Can you write a macro that does a better job than ```Find maxima```?
+Classification problem: Can you write a macro to classify the Dot Blots correctly?
+Segmentation problem: Can you improve the segmentation the graphene grain to reduce the RMSE?
+
+# Please complete the learning objective survey
+
+<img src="vevox-qr-code-w3.png" alt="vevox link" width="100"/>  [Vevox.app Session](https://vevox.app/#/m/125248103))
 
 If you haven't already, remember to save your the output from the Macro Recorder so you have a record of what you have done.
