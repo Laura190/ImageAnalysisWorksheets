@@ -49,7 +49,7 @@ A common task in image analysis is counting how many objects are in an image. In
 
 | Step   | Action    | Details |
 |--------|-----------|------------|
-| 1      | Open an Image | Go to `File > Open Samples > Dot Blot`. |
+| 1      | Open the Dot Blot sample image | Go to `File > Open Samples > Dot Blot`. |
 | 2      | Count how many dots are in the image | Manually count the number of dots and make a note of this value |
 | 3      | Run the `Find Maxima` tool | Navigate to `Process > Find Maxima...` |
 | 4      | Set the prominence value to 10 | Enter 10 in the Prominence box |
@@ -104,7 +104,7 @@ Thresholding separates the pixels in an image into two (or more) classes based o
 
 | Step | Action | Details |
 |--------|-----------|------------|
-| 1      | Open an Image | Go to `File > Open Samples > Blobs`. |
+| 1      | Open the Blobs sample image | Go to `File > Open Samples > Blobs`. |
 | 2      | Invert the LUT | Click the LUT button in the Fiji toolbar and click **Invert LUT**. <br> <img src="ImageJToolBar_lut.png" alt="LUT button" width="50%"/> |
 | 3      | Experiment with Manual Thresholds | Go to `Image > Adjust > Threshold` and move the sliders. Watch how the red area on the image changes as you move the slider. <br> <img src="Threshold.png" alt="Threshold" width="250"/> |
 | 4      | Create a Mask | Click "Apply" |
@@ -138,7 +138,7 @@ A montage showing the results from the different automatic thresholding methods 
 
 | Step  | Action | Details |
 |-------|-----------|------------|
-| 1     | Open an Image | Go to `File > Open Samples > Blobs`. |
+| 1     | Open the Blobs sample image | Go to `File > Open Samples > Blobs`. |
 | 2     | Open the Auto Threshold Tool | Navigate to `Image > Adjust > Auto Threshold`. |
 | 3     | Select a method based on the previous exercise | Click on the Method drop down box and choose a method, then click "OK" |
 
