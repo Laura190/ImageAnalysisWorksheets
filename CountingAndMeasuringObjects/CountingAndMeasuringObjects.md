@@ -38,12 +38,12 @@ You will also learn how to use tools in Fiji to:
 - Count objects
 - Segment an image
 - Measure objects
-- Save a record what you have done interactively
+- Save a record of what you have done interactively
 - Create a macro to run a sequence of steps automatically
 
 # Counting Objects
 
-A common task in image analysis is counting how many objects are in an image. In fluorescence microscopy images objects are identified as having a different intensity from the background. We can use a tool called `Find Maxima` to identify location of objects and count how many there are. The `Find Maxima` tool identifies local maxima based on a user defined **prominence** value. The prominence value is a measure of how distinct a peak is from it's surroundings. The higher the prominence value, the more distinct a peak is from it's surroundings. The `Find Maxima` tool can also identify local minima by selecting the **Light background** option.
+A common task in image analysis is counting how many objects are in an image. In fluorescence microscopy images objects are identified as having a different intensity from the background. We can use a tool called `Find Maxima` to identify location of objects and count how many there are. The `Find Maxima` tool identifies local maxima based on a user defined **prominence** value. The prominence value is a measure of how distinct a peak is from its surroundings. The higher the prominence value, the more distinct the peak. The `Find Maxima` tool can also identify local minima by selecting the **Light background** option.
 
 ### 📋 Step-by-Step Instructions
 
@@ -56,7 +56,7 @@ A common task in image analysis is counting how many objects are in an image. In
 | 5      | Select the Light background option | Check the Light background box |
 | 6      | Set output type to Count | Click the drop down box next to Output type |
 | 7      | Select the Preview point selection option | Check the Preview point selection box |
-| 8      | Note the number of dots identified | The number of maxima will be show in the lower left of the `Find Maxima` dialog box |
+| 8      | Note the number of dots identified | The number of maxima will be shown in the lower left of the `Find Maxima` dialog box |
 
 ### 🤔 Investigate
 - Does the number of dots identified by `Find Maxima` match your manual count? Why not?
@@ -74,15 +74,15 @@ There are some small areas of noise in the image, which causes the `Find Maxima`
 | 1      | Close the `Find Maxima` window | Click Cancel in the `Find Maxima` window |
 | 2      | Apply a Median filter with radius 4 | Navigate to `Process > Filters > Median` and enter 4 in the Radius box. Click OK. |
 | 3      | Run the `Find Maxima` tool with prominence value 5 | Navigate to `Process > Find Maxima...` and enter 5 in the Prominence box |
-| 4      | Check the other settings are the same a before | Look at the previous instructions and check that the options in steps 5-7 are selected. |
-| 5      | Note the number of dots identified | The number of maxima will be show in the lower left of the `Find Maxima` dialog box |
+| 4      | Check the other settings are the same as before | Look at the previous instructions and check that the options in steps 5-7 are selected. |
+| 5      | Note the number of dots identified | The number of maxima will be shown in the lower left of the `Find Maxima` dialog box |
 
 ### 🤔 Investigate
 - Does the number of dots identified by `Find Maxima` match your manual count?
 - Why was the value of 4 used for the radius of the median filter?
 - What value should you enter for the prominence value to count only the 3 darkest dots?
 - What happens if you click OK on the `Find Maxima` tool?
-- What changes is you select a different output type from the `Find Maxima` tool?
+- What changes if you select a different output type from the `Find Maxima` tool?
 If `Find Maxima` does not give you an accurate count, please ask for help.
 
 # Segmentation
@@ -167,7 +167,7 @@ The measurements you see in the Results window will depend on the settings in Fi
 | Step  | Action | Details |
 |-------|-----------|------------|
 | 1     | Open `Set Measurements` | Navigate to `Analyze > Set Measurements...` |
-| 2     | Select the required settings and run the tool | Check the boxes new to Area and Shape descriptors and uncheck all the other boxes, click OK |
+| 2     | Select the required settings and run the tool | Check the boxes next to Area and Shape descriptors and uncheck all the other boxes, click OK |
 | 3     | Run `Analyze Particles` | Match the settings shown in the image <br> <img src="AnalyzeParticles_measure.png" alt="analyze particles" width="250"/> <br> then click "OK"
 
 Particles of any size and shape are measured, which can introduce errors when measuring object properties such as size. Objects that should be excluded include:
@@ -240,7 +240,7 @@ If you are happy with the workflow you have created in the previous section, sav
 ### 🤔 Investigate
 - Did the macro stop unexpectedly? Did an error message appear after clicking `Run`? If so, ask for help to fix the errors.
 - Is the result from running the macro the same as when you did it manually? If not, why not?
-- Think about what each line of code does. Try explaining it to someone or describe it using an annotation. If you are not unsure what each line does, please ask.
+- Think about what each line of code does. Try explaining it to someone or describe it using an annotation. If you are unsure what each line does, please ask.
 
 ## ♻️ Apply the Macro to Another Image
 
