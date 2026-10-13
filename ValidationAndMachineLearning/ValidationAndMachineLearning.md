@@ -158,6 +158,6 @@ Segmentation problem: Can you improve the segmentation the graphene grain to red
 
 # Please complete the learning objective survey
 
-<img src="vevox-qr-code-w3.png" alt="vevox link" width="100"/>  [Vevox.app Session](https://vevox.app/#/m/125248103))
+<img src="vevox-qr-code-w3.png" alt="vevox link" width="100"/>  [Vevox.app Session](https://vevox.app/#/m/125248103)
 
 If you haven't already, remember to save your the output from the Macro Recorder so you have a record of what you have done.
