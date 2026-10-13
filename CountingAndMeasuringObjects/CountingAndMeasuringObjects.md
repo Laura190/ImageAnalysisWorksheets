@@ -123,7 +123,7 @@ A manual threshold can be inconsistent and subjective. To overcome these issues,
 
 | Step | Action | Details |
 |--------|-----------|------------|
-| 1      | Open an Image | Go to `File > Open Samples > Blobs`. |
+| 1      | Open the Blobs sample image | Go to `File > Open Samples > Blobs`. |
 | 2      | Open the Auto Threshold Tool | Navigate to `Image > Adjust > Auto Threshold`. <br> <img src="Auto Threshold.png" alt="Threshold" width="400"/> |
 | 3      | Use the Default Settings | Click "OK" |
 
