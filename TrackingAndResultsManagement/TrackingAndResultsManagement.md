@@ -211,4 +211,4 @@ Tinevez, J.-Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Lapla
 
 # Please complete the learning objective survey
 
-<img src="vevox-qr-code-t+r.png" alt="vevox link" width="100"/>  [Vevox.app Session ID: 195-061-937](https://vevox.app/#/m/143592560)
+<img src="vevox-qr-code-t+r.png" alt="vevox link" width="100"/>  [Vevox.app](https://vevox.app/#/m/143592560)
