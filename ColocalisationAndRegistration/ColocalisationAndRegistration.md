@@ -164,6 +164,10 @@ The BIG-EPFL update site contains more than just the StackReg plugin, however th
 - StackReg has 4 different transforms: Translation, Rigid Body, Scaled Rotation and Affine. Read the [StackReg](https://bigwww.epfl.ch/thevenaz/stackreg/) or ask your favourite chat bot ([Bioimage.io Chat](https://bioimage.io/chat/)) to understand what each of them do. Try out the different transforms. Which do you think is most appropriate for registering ```Katies-chicken-cell-infected-with-virus-t50.tif```? 
 - In the ```Plugins > Registration``` menu in Fiji there are more plugins designed for registering images. Experiment with a couple of them to see how they compare to StackReg. Look online for relevant documentation to understand what they can do.
 
+# Please complete the learning objective survey
+
+<img src="vevox-qr-code-c+r.png" alt="vevox link" width="100"/>  [Vevox.app](https://vevox.app/#/m/199951238)
+
 # References
 
 Bolte, S., & Cordelieres, F. P. (2006). A guided tour into subcellular colocalization analysis in light microscopy. Journal of Microscopy, 224(3), 213–232. [doi:10.1111/j.1365-2818.2006.01706.x](https://doi.org/10.1111/j.1365-2818.2006.01706.x)
