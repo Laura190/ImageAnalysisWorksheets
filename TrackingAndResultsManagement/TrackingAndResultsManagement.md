@@ -25,6 +25,16 @@ Download the data before continuing:
 | 1      | Open Fiji | Find the executable in the downloaded Fiji folder and double-click to launch it. |
 | 2      | Open the Macro Recorder | Navigate to `Plugins > Macro > Record`. |
 
+# Learning Objectives
+
+By following this worksheet, you will learn how to:
+- Track particles in images
+- Extract data from results tables using ImageJ macros
+
+You will also learn how to use these tools in Fiji:
+- Trackmate
+- the ```Results``` window
+
 # Tracking
 
 Uncredited image in this section are from [Dave Mason's image analysis course](https://bitbucket.org/davemason/imageanalysiswithfiji/src/master/).
@@ -196,4 +206,9 @@ Open or import any of the .csv files from the previous task in your favourite pl
 
 Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832. [doi:10.1038/s41592-022-01507-1](https://doi.org/10.1038/s41592-022-01507-1)
 
-Tinevez, J.-Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Laplantine, E., … Eliceiri, K. W. (2017). TrackMate: An open and extensible platform for single-particle tracking. Methods, 115, 80–90. [doi:10.1016/j.ymeth.2016.09.016](https://doi.org/10.1016/j.ymeth.2016.09.016)
+Tinevez, J.-Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Laplantine, E., … Eliceiri, K. W. (2017). TrackMate: An open and extensible platform for single-particle tracking. Methods, 
+115, 80–90. [doi:10.1016/j.ymeth.2016.09.016](https://doi.org/10.1016/j.ymeth.2016.09.016)
+
+# Please complete the learning objective survey
+
+<img src="vevox-qr-code-t+r.png" alt="vevox link" width="100"/>  [Vevox.app Session ID: 195-061-937](https://vevox.app/#/m/143592560)
