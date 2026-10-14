@@ -33,7 +33,7 @@ By following this worksheet, you will learn about the following concepts:
 - Colocalisation
 - Registration
 
-You will also learn how to use the following Fiji plugins:
+You will also learn how to use install additional plugins in Fiji using:
 
 - BIOP JACoP
 - StackReg
@@ -161,7 +161,7 @@ The BIG-EPFL update site contains more than just the StackReg plugin, however th
 | 6      | Maximum project the registered stack to compare the results | Navigate to ```Image > Stacks > Z Project...``` and select ```Max Intensity``` for the ```Projection type``` |
 
 ### 🤔 Investigate
-- StackReg has 4 different transforms: Translation, Rigid Body, Scaled Rotation and Affine. Read the [StackReg](https://bigwww.epfl.ch/thevenaz/stackreg/) or ask for favourite chat bot ([Bioimage.io Chat](https://bioimage.io/chat/)) to understand what each of them do. Try out the different transforms. Which do you think is most appropriate for registering ```Katies-chicken-cell-infected-with-virus-t50.tif```? 
+- StackReg has 4 different transforms: Translation, Rigid Body, Scaled Rotation and Affine. Read the [StackReg](https://bigwww.epfl.ch/thevenaz/stackreg/) or ask your favourite chat bot ([Bioimage.io Chat](https://bioimage.io/chat/)) to understand what each of them do. Try out the different transforms. Which do you think is most appropriate for registering ```Katies-chicken-cell-infected-with-virus-t50.tif```? 
 - In the ```Plugins > Registration``` menu in Fiji there are more plugins designed for registering images. Experiment with a couple of them to see how they compare to StackReg. Look online for relevant documentation to understand what they can do.
 
 # References
