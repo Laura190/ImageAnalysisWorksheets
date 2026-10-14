@@ -249,5 +249,5 @@ If you haven't already, remember to save your the output from the Macro Recorder
 
 # Please complete the learning objective survey
 
-<img src="vevox.png" alt="vevox link" width="100"/> [vevox.app](https://vevox.app/#/m/107492073) Session ID: 107-492-073
+<img src="vevox.png" alt="vevox link" width="100"/> [vevox.app](https://vevox.app/#/m/107492073)
  
